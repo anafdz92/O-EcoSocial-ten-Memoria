@@ -1,3 +1,16 @@
 body {
-  background-color: red;
+}
+.mainList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.line {
+  border-left: 6px solid green;
+  height: 500px;
+}
+
+.title {
+  margin: 70px;
 }
