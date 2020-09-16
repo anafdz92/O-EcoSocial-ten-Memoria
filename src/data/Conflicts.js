@@ -1,4 +1,4 @@
-const conflictEvents = [
+const conflicts = [
   {
     id: 1,
     year: 1974,
@@ -6,7 +6,7 @@ const conflictEvents = [
     location: "Cerceda A Coruña",
     what:
       "Fenosa merca por 900 millons de pesetas a concesión dunha mina de Lignito no val das Encrobas. Nace a sociedade `Lignitos de Meirama, S.A. Nese verán o consello de ministros presidido por Franco aproba un decreto de utilidade pública e declara de interés preferente o enclave da mina, autorizando a empresa a expropiación forzosa pola vía de urxencia`",
-    links: "https://www.youtube.com/watch?v=LJqJA2inpko",
+    links: ["https://www.youtube.com/watch?v=LJqJA2inpko"],
     url: "../images/mulleres.jpg",
   },
   {
@@ -16,7 +16,10 @@ const conflictEvents = [
     location: "Costa de Finisterre",
     what:
       "O petrolero Prestige sofre unha vía de auga a 28 millas da costa de Fisterra. A Madrugada do 19 de novembro partiuse en dous afundindose cunha carga de 77.000t de crudo que provocarían un dos maiores desastres ecosociais da Galiza. ",
-    links: " https://plataformanuncamais.wordpress.com/",
+    links: [
+      " https://plataformanuncamais.wordpress.com/",
+      "https://www.udc.es/dep/ps/grupo/varios/prest_es.pdf",
+    ],
     url: "../images/prestige.jpg",
   },
   {
@@ -26,10 +29,11 @@ const conflictEvents = [
     location: "Provincias de Ourense e Pontevedra",
     what:
       "O monocultivo de especies forestais pirófitas coma o eucalipto (das que son grandes beneficiarios empresas como o Grupo Ence ou Grupo Finsa) xunto ao despoboamento rural e a emerxencia climática, sentaron as bases para unha das vagas de incendios máis importantes dos últimos anos que en dúas semanas acabaron cunha superficie de máis de 70.000 km cuadrados",
-    links:
+    links: [
       "https://www.lavanguardia.com/vida/20171019/432157474162/industria-fuego-galicia-xabier-vazquez-pumarino.html",
+    ],
     url: "../images/vigo.jpg",
   },
 ];
 
-export default conflictEvents;
+export default conflicts;

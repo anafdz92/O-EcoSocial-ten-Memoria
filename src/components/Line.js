@@ -1,7 +1,11 @@
 import React from "react";
 
 const Line = () => {
-  return <div className="line"></div>;
+  return (
+    <form className="line">
+      <input type="radio" name="vehicle1" value="Bike"></input>
+    </form>
+  );
 };
 
 export default Line;
