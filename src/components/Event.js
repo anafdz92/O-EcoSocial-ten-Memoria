@@ -1,7 +1,6 @@
 import React from "react";
 
 const Event = (props) => {
-  console.log(props.img);
   const linksli = props.links.map((link, index) => {
     return (
       <li key={index}>
