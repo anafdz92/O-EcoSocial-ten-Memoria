@@ -9,12 +9,12 @@ const App = () => {
   const [item, setItem] = useState(Conflicts);
 
   return (
-    <div className="mainList">
+    <section className="mainList">
       <h1 className="title"> O EcoSocial ten Memoria </h1>
       <Line conflicts={Conflicts} />
       <Events conflicts={Conflicts} />
       <EventDetail />
-    </div>
+    </section>
   );
 };
 

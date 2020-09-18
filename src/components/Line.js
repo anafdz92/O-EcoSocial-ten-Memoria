@@ -7,18 +7,23 @@ const Line = (props) => {
   }; //Quizameter un dataset en el input
 
   const dotList = props.conflicts.map((item) => {
+    console.log(item);
     return (
-      <input
-        type="radio"
-        key={item.id}
-        name={props.conflicts.year}
-        onChange={handleChange}
-      >
-        {props.conflicts.year}
-      </input>
+      <li key={item.id}>
+        <div>
+          <time>{item.year}</time>
+          <p>{item.name}</p>
+          <p>{item.location}</p>
+          <button>Para saber máis</button>
+        </div>
+      </li>
     );
   });
-  return <form className="line">{dotList}</form>;
+  return (
+    <div className="line">
+      <ul className="dotList">{dotList}</ul>
+    </div>
+  );
 };
 
 export default Line;
