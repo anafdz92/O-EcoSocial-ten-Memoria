@@ -1,23 +1,35 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const EventDetail = () => {
+const EventDetail = (props) => {
+  console.log(props);
+
+  const linksli = props.conflict.links.map((link, index) => {
+    return (
+      <li key={index}>
+        <p>Enlaces de interés</p>
+        <a href={link}>{link}</a>
+      </li>
+    );
+  });
   return (
-    <div className="modal">
-      <img></img>
-      <ul>
-        <li>Ano</li>
-        <li>Lugar</li>
-        <li>¿Que pasou?</li>
-        <li>
-          <p>Links de Interese</p>
-          <ul>
-            <li>
-              <a href="">Link</a>
-            </li>
+    <article className="modal">
+      <div className="content">
+        <Link to="/">
+          <button className="close">Close</button>
+        </Link>
+        <img src={props.conflict.url} alt={props.conflict.name}></img>
+        <div>
+          <h2>{props.conflict.name}</h2>
+          <ul className="modalList">
+            <li>{props.conflict.year}</li>
+            <li>{props.conflict.location}</li>
+            <li>{props.conflict.what}</li>
+            <ul>{linksli}</ul>
           </ul>
-        </li>
-      </ul>
-    </div>
+        </div>
+      </div>
+    </article>
   );
 };
 

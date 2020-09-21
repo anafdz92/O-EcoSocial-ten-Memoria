@@ -1,24 +1,28 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Line = (props) => {
-  const handleChange = (ev) => {
-    console.log(ev.target.checked, ev.target);
-    //Si es check busco en el array de eventos hasta encontrar uno cuyo id coincida con e key de el botón
-  }; //Quizameter un dataset en el input
+  const dotList = props.conflicts
+    .sort((a, b) => b.year - a.year)
+    .map((item) => {
+      return (
+        <li key={item.id}>
+          <div>
+            <time>{item.year}</time>
+            <p>{item.name}</p>
+            <p>{item.location}</p>
+            <Link to={`/line/${item.id}`}>
+              <button className="buttonPink">
+                <i class="fas fa-info-circle"></i>
+              </button>
+            </Link>
+          </div>
+        </li>
+      );
+    });
 
-  const dotList = props.conflicts.map((item) => {
-    console.log(item);
-    return (
-      <li key={item.id}>
-        <div>
-          <time>{item.year}</time>
-          <p>{item.name}</p>
-          <p>{item.location}</p>
-          <button>Para saber máis</button>
-        </div>
-      </li>
-    );
-  });
+  console.log(dotList);
+
   return (
     <div className="line">
       <ul className="dotList">{dotList}</ul>
