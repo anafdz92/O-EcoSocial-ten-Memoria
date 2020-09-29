@@ -11,7 +11,13 @@ const Line = (props) => {
             <time>{item.year}</time>
             <p>{item.name}</p>
             <p>{item.location}</p>
-            <Link to={`/line/${item.id}`}>
+            <Link
+              to={`/line/${item.id}`}
+              // to={{
+              //   pathname: `/line/${item.id}`,
+              //   state: { modal: true },
+              // }}
+            >
               <button className="buttonPink">
                 <i class="fas fa-info-circle"></i>
               </button>
@@ -20,8 +26,6 @@ const Line = (props) => {
         </li>
       );
     });
-
-  console.log(dotList);
 
   return (
     <div className="line">

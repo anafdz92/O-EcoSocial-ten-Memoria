@@ -1,8 +1,9 @@
-@import "./core/reset";
-@import "./layout/inicio";
-@import "./layout/proxecto";
-@import "./layout/contacta";
-
-* {
-  font-family: "Special Elite", cursive;
-}
+@import "./base/reset";
+@import "./base/typography";
+@import "./components/app";
+@import "./components/inicio";
+@import "./components/proxecto";
+@import "./components/contacta";
+@import "./components/eventDetail";
+@import "./components/line";
+@import "./layout/navigation";

@@ -3,24 +3,19 @@ import { Link } from "react-router-dom";
 
 const Proxecto = (props) => {
   return (
-    <>
-      <header className="header">
-        <nav className="menu">
-          <ul>
-            <li>
-              <Link to="/">Inicio</Link>
-            </li>
-            <li>
-              <Link to="/Proxecto">O Proxecto</Link>
-            </li>
-            <li>
-              <Link to="/Contacta">Contacta</Link>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <p>Este proxecto é resistencia</p>
-    </>
+    <div className="container">
+      <div className="projectContainer">
+        <h3> O Proxecto</h3>
+        <p>Este proxecto é unha táctica de resistencia fronte a desmemoria.</p>
+        Un arquivo vivo en torno o que reflectir acerca dos conflictos
+        ecolóxicos e sociais que atravesan a nosa história contemporánea.
+        <p>
+          <p>
+            Unha ollada o pasado recente para confrontar as loitas do presente.
+          </p>
+        </p>
+      </div>
+    </div>
   );
 };
 export default Proxecto;

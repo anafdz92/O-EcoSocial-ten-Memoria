@@ -1,0 +1,94 @@
+.line ul li {
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: //#009b77;
+    #006e51;
+  // #9b2335;
+}
+
+.line ul li::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: inherit;
+}
+
+.line ul li div {
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  height: 135px;
+  padding: 15px;
+  background: #eadb8b;
+  border-radius: 4px;
+
+  background-color: #f8f5de;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 210, 0, 0.4),
+    rgba(200, 160, 0, 0.1) 11%,
+    rgba(0, 0, 0, 0) 35%,
+    rgba(200, 160, 0, 0.1) 65%
+  );
+  box-shadow: inset 0 0 75px rgba(255, 210, 0, 0.3),
+    inset 0 0 20px rgba(255, 210, 0, 0.4), inset 0 0 30px rgba(220, 120, 0, 0.8);
+  color: rgba(0, 0, 0, 0.8);
+  letter-spacing: 0.05em;
+  line-height: 1.6;
+}
+.line ul li div::before {
+  content: "";
+  position: absolute;
+  bottom: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.line ul li:nth-child(odd) div {
+  left: 45px;
+}
+
+.line ul li:nth-child(odd) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #eadb8b transparent transparent;
+}
+
+.line ul li:nth-child(even) div {
+  left: -439px;
+}
+
+.line ul li:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent #eadb8b;
+}
+
+.dotList {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.buttonPink {
+  color: #aaaaaa;
+  float: right;
+  font-size: 16px;
+}
+
+.buttonPink:hover,
+.buttonPink:focus {
+  color: #6f6d6e;
+  text-decoration: none;
+  cursor: pointer;
+}

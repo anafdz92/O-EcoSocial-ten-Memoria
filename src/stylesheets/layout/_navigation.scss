@@ -1,0 +1,21 @@
+//NAVEGADOR
+.menu ul {
+  display: flex;
+}
+.menu ul li {
+  list-style-type: none;
+  margin: 15px;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 20px;
+}
+.menu ul li a:hover,
+.menu ul li a:focus {
+  color: #6f6d6e;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  padding-bottom: 3px;
+  cursor: pointer;
+}

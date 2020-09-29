@@ -13,7 +13,7 @@ const conflicts = [
     id: 2,
     year: 2002,
     name: "Desastre do Prestige",
-    location: "Costa de Finisterre",
+    location: "Costa de Fisterra",
     what:
       "O petrolero Prestige sofre unha vía de auga a 28 millas da costa de Fisterra. A Madrugada do 19 de novembro partiuse en dous afundindose cunha carga de 77.000t de crudo que provocarían un dos maiores desastres ecosociais da Galiza. ",
     links: [

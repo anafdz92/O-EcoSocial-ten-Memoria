@@ -1,0 +1,13 @@
+//CORPO
+.mainList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.title {
+  margin: 70px;
+  font-size: 35px;
+}
