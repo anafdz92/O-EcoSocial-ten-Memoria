@@ -8,7 +8,19 @@ import Conflicts from "../data/Conflicts";
 import Line from "./Line";
 
 const App = (props) => {
-  const [item, setItem] = useState(Conflicts);
+  const [items, setItems] = useState(Conflicts);
+
+  //EVENT HANDLERS
+  const handleFilter = (data) => {
+    console.log(data);
+    //   setFilterContent(data);
+  };
+
+  //RENDER FILTRADO POR AÑO
+  console.log(items);
+  // const filteredCharacters = items.filter((item) => {
+  //   return item.year.includes(filterContent);
+  // });
 
   //const previousLocation = props.location;
 
@@ -50,7 +62,7 @@ const App = (props) => {
       </header>
       {/* <Switch location={isModal ? previousLocation : location}> */}
       <Switch>
-        <Route exact path="/" component={Inicio} />
+        <Route exact path="/" component={Inicio} handleFilter={handleFilter} />
         <Route exact path="/Proxecto" component={Proxecto} />
         <Route exact path="/Contacta" component={Contacta} />
         <Route exact path="/line/:id" render={renderEvent} />

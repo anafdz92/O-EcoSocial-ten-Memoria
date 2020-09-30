@@ -3,8 +3,9 @@ import { Link, Route, Switch } from "react-router-dom";
 import Line from "./Line";
 import EventDetail from "./EventDetail";
 import Conflicts from "../data/Conflicts";
+import Filter from "../components/Filter";
 
-const Inicio = () => {
+const Inicio = (props) => {
   // const [item, setItem] = useState(Conflicts);
 
   // const renderEvent = (props) => {
@@ -21,6 +22,7 @@ const Inicio = () => {
     <>
       <section className="mainList">
         <h1 className="title"> O EcoSocial ten Memoria </h1>
+        <Filter handleFilter={props.handleFilter} />
         <Line conflicts={Conflicts} />
         {/* <Switch>
           <Route path="/line/:id" render={renderEvent} />

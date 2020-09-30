@@ -81,14 +81,16 @@
 }
 
 .buttonPink {
-  color: #aaaaaa;
+  color: #006e51;
+  border: none;
+  background-color: transparent;
   float: right;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .buttonPink:hover,
 .buttonPink:focus {
-  color: #6f6d6e;
+  color: #129471;
   text-decoration: none;
   cursor: pointer;
 }
