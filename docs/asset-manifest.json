@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/O-EcoSocial-ten-Memoria/static/css/main.a3a10d7f.chunk.css",
-    "main.js": "/O-EcoSocial-ten-Memoria/static/js/main.3e43edba.chunk.js",
-    "main.js.map": "/O-EcoSocial-ten-Memoria/static/js/main.3e43edba.chunk.js.map",
+    "main.css": "/O-EcoSocial-ten-Memoria/static/css/main.6d16e601.chunk.css",
+    "main.js": "/O-EcoSocial-ten-Memoria/static/js/main.721c8d4a.chunk.js",
+    "main.js.map": "/O-EcoSocial-ten-Memoria/static/js/main.721c8d4a.chunk.js.map",
     "runtime-main.js": "/O-EcoSocial-ten-Memoria/static/js/runtime-main.8d1b3f8b.js",
     "runtime-main.js.map": "/O-EcoSocial-ten-Memoria/static/js/runtime-main.8d1b3f8b.js.map",
-    "static/js/2.b7e4377c.chunk.js": "/O-EcoSocial-ten-Memoria/static/js/2.b7e4377c.chunk.js",
-    "static/js/2.b7e4377c.chunk.js.map": "/O-EcoSocial-ten-Memoria/static/js/2.b7e4377c.chunk.js.map",
+    "static/js/2.2de8cdde.chunk.js": "/O-EcoSocial-ten-Memoria/static/js/2.2de8cdde.chunk.js",
+    "static/js/2.2de8cdde.chunk.js.map": "/O-EcoSocial-ten-Memoria/static/js/2.2de8cdde.chunk.js.map",
     "index.html": "/O-EcoSocial-ten-Memoria/index.html",
-    "precache-manifest.2dee413afb0f9eff9828bf4fa1a37901.js": "/O-EcoSocial-ten-Memoria/precache-manifest.2dee413afb0f9eff9828bf4fa1a37901.js",
+    "precache-manifest.58bb2dd87c2b42ba6e0c5dad3053ebf1.js": "/O-EcoSocial-ten-Memoria/precache-manifest.58bb2dd87c2b42ba6e0c5dad3053ebf1.js",
     "service-worker.js": "/O-EcoSocial-ten-Memoria/service-worker.js",
-    "static/css/main.a3a10d7f.chunk.css.map": "/O-EcoSocial-ten-Memoria/static/css/main.a3a10d7f.chunk.css.map",
-    "static/js/2.b7e4377c.chunk.js.LICENSE.txt": "/O-EcoSocial-ten-Memoria/static/js/2.b7e4377c.chunk.js.LICENSE.txt",
+    "static/css/main.6d16e601.chunk.css.map": "/O-EcoSocial-ten-Memoria/static/css/main.6d16e601.chunk.css.map",
+    "static/js/2.2de8cdde.chunk.js.LICENSE.txt": "/O-EcoSocial-ten-Memoria/static/js/2.2de8cdde.chunk.js.LICENSE.txt",
     "static/media/main.scss": "/O-EcoSocial-ten-Memoria/static/media/img.001db304.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.8d1b3f8b.js",
-    "static/js/2.b7e4377c.chunk.js",
-    "static/css/main.a3a10d7f.chunk.css",
-    "static/js/main.3e43edba.chunk.js"
+    "static/js/2.2de8cdde.chunk.js",
+    "static/css/main.6d16e601.chunk.css",
+    "static/js/main.721c8d4a.chunk.js"
   ]
 }
