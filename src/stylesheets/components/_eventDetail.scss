@@ -20,6 +20,13 @@
 }
 
 .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  border: 1px solid red;
   border-radius: 2px;
   background-color: #f8f5de;
   background-image: linear-gradient(
@@ -35,22 +42,58 @@
   width: calc(8.5in - 15em);
   letter-spacing: 0.05em;
   line-height: 1.6;
-  padding: 5em 10em 15em 5em;
+  padding: 5em 5em 5em 5em;
 }
 
 .modalList {
   list-style-type: none;
 }
 
+.modalList li {
+  margin: 10px;
+}
+
 .close {
-  color: #aaaaaa;
+  background-color: transparent;
+  color: #006e51;
+  border: none;
   float: right;
   font-size: 16px;
+  padding: 5px;
+  border-radius: 35%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 15px;
+  margin-right: 15px;
+  font-size: 20px;
 }
 
 .close:hover,
 .close:focus {
-  color: #6f6d6e;
+  background-color: transparent;
+  color: #129471;
   text-decoration: none;
   cursor: pointer;
+}
+
+.info {
+  width: 500px;
+  height: 500px;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info h2 {
+  margin-bottom: 30px;
+}
+
+.links {
+  list-style-type: none;
+  border: 1px solid red;
+  width: 500px;
+  max-height: 150px;
 }

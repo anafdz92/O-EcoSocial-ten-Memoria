@@ -8,7 +8,7 @@ const EventDetail = (props) => {
   const linksli = props.conflict.links.map((link, index) => {
     return (
       <li key={index}>
-        <p>Enlaces de interés</p>
+        <p>Enlaces:</p>
         <a href={link}>{link}</a>
       </li>
     );
@@ -17,16 +17,18 @@ const EventDetail = (props) => {
     <article className="modal">
       <div className="content">
         <Link to="/">
-          <button className="close">Close</button>
+          <button className="close">
+            <i class="fas fa-times"></i>
+          </button>
         </Link>
         <img src={props.conflict.url} alt={props.conflict.name}></img>
-        <div>
+        <div className="info">
           <h2>{props.conflict.name}</h2>
           <ul className="modalList">
-            <li>{props.conflict.year}</li>
-            <li>{props.conflict.location}</li>
-            <li>{props.conflict.what}</li>
-            <ul>{linksli}</ul>
+            <li>Ano: {props.conflict.year}</li>
+            <li>Lugar: {props.conflict.location}</li>
+            <li>O que: {props.conflict.what}</li>
+            <ul className="links">{linksli}</ul>
           </ul>
         </div>
       </div>
