@@ -22,10 +22,13 @@
 }
 
 .line ul li div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   position: relative;
   bottom: 0;
   width: 400px;
-  height: 135px;
+  height: 170px;
   padding: 15px;
   background: #eadb8b;
   border-radius: 4px;
@@ -93,4 +96,12 @@
   color: #129471;
   text-decoration: none;
   cursor: pointer;
+}
+
+.dot {
+  height: 8px;
+  width: 8px;
+  background-color: #9b1b30;
+  border-radius: 50%;
+  display: inline-block;
 }

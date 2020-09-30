@@ -26,9 +26,39 @@
   width: calc(8.5in - 15em);
   letter-spacing: 0.05em;
   line-height: 1.6;
-  padding: 5em 10em 15em 5em;
+  //padding: 5em 10em 15em 5em;
+  padding: 5em 5em 5em 5em;
 }
 
 .formContainer h3 {
-  //padding: 25px;
+  margin-bottom: 15px;
+}
+
+.formContainer p {
+  margin: 15px;
+}
+
+// .form {
+//   display: flex;
+//   flex-direction: column;
+// }
+.form fieldset {
+  display: flex;
+  flex-direction: column;
+}
+
+.formContent input {
+  margin: 10px;
+}
+
+.fieldset {
+  margin: 15px;
+  margin-bottom: 45px;
+  border: 1.5px #9b1b30;
+  border-style: dashed;
+}
+
+.button {
+  width: 160px;
+  height: 40px;
 }

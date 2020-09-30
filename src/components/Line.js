@@ -9,7 +9,7 @@ const Line = (props) => {
         <li key={item.id}>
           <div>
             <time>{item.year}</time>
-            <p>{item.name}</p>
+            <p> {item.name}</p>
             <p>{item.location}</p>
             <Link
               to={`/line/${item.id}`}

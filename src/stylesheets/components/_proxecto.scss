@@ -43,10 +43,29 @@
   width: calc(8.5in - 15em);
   letter-spacing: 0.05em;
   line-height: 1.6;
-  padding: 5em 10em 15em 5em;
+  //padding: 5em 10em 15em 5em;
+  padding: 5em 5em 5em 5em;
 }
 
 .projectContainer p {
   margin: 15px;
   padding: 0px;
+}
+
+.quote {
+  font-size: 13px;
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-right: 25px;
+  width: 500px;
+  height: 150px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.quote p {
+  margin: 0px;
+  flex-wrap: wrap;
 }
