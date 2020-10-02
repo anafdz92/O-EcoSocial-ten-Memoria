@@ -7,15 +7,14 @@ const Contacta = (props) => {
         <h3>Contacta</h3>
         <p>
           Podes colaborar co proxecto enviándonos documentación, recursos e
-          información sobre conflictos ecosociais que consideres relevantes para
-          a nosa liña de tempo. Recomendacións, correccións e suxestións son
-          sempre benvidas.
+          información.
         </p>
-        <form action="" method="post" className="form">
+        <p>Recomendacións, correccións e suxestións son sempre benvidas.</p>
+        <form action="" method="post" className="contactForm">
           <fieldset className="fieldset">
             <legend> Sobre ti </legend>
             <div className="formContent">
-              <label for="firstName">Nome</label>
+              <label for="firstName">Nome:</label>
               <input
                 className="inputs"
                 type="text"
@@ -26,7 +25,7 @@ const Contacta = (props) => {
               />
             </div>
             <div>
-              <label for="email">Email</label>
+              <label for="email">Email:</label>
               <input
                 className="inputs"
                 type="email"
@@ -40,7 +39,7 @@ const Contacta = (props) => {
           <fieldset className="fieldset">
             <legend>Axúdanos a construir Memoria</legend>
             <div className="formContent">
-              <label for="date">Data</label>
+              <label for="date">Data:</label>
               <input
                 className="inputs"
                 type="date"
@@ -52,7 +51,7 @@ const Contacta = (props) => {
               />
             </div>
             <div>
-              <label for="conflict">Conflicto</label>
+              <label for="conflict">Conflicto:</label>
               <input
                 className="inputs"
                 type="text"
@@ -63,7 +62,7 @@ const Contacta = (props) => {
               />
             </div>
             <div className="formContent">
-              <label for="place">Lugar</label>
+              <label for="place">Lugar:</label>
               <input
                 className="inputs"
                 type="text"
@@ -73,23 +72,25 @@ const Contacta = (props) => {
                 required
               />
             </div>
-            <div>
-              <label for="memoria">Comparte</label>
-              <input
-                className="inputs"
+            <div className="shareContent">
+              <label for="memoria"> Comparte:</label>
+              <textarea
+                className="share"
                 type="text"
                 name="memoria"
                 id="memoria"
-                placeholder="Adunta información de interese"
+                placeholder="Adxunta información de interese"
                 required
               />
             </div>
             <div className="formContent">
-              <label for="files">Documentos</label>
-              <input type="file" name="files" id="files" />
+              <label for="files">Documentos:</label>
+              <input type="file" name="files" id="files" className="files" />
             </div>
           </fieldset>
-          <input type="submit" value="Enviar info" className="button" />
+          <button className="button">
+            <i class="far fa-paper-plane"></i>
+          </button>
         </form>
       </div>
     </div>

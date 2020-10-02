@@ -26,7 +26,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  //justify-content: center;
   border-radius: 2px;
 
   background-color: #f8f5de;
@@ -40,13 +40,15 @@
   box-shadow: inset 0 0 75px rgba(255, 210, 0, 0.3),
     inset 0 0 20px rgba(255, 210, 0, 0.4), inset 0 0 30px rgba(220, 120, 0, 0.8);
   color: rgba(0, 0, 0, 0.8);
-  width: calc(8.5in - 15em);
+  width: 600px;
+  height: 750px;
+
   letter-spacing: 0.05em;
   line-height: 1.6;
-  //padding: 5em 10em 15em 5em;
-  padding: 5em 5em 5em 5em;
 }
-
+.projectContainer h3 {
+  margin-top: 80px;
+}
 .projectContainer p {
   margin: 15px;
   padding: 0px;
@@ -68,4 +70,9 @@
 .quote p {
   margin: 0px;
   flex-wrap: wrap;
+}
+
+.text {
+  width: 500px;
+  height: 150px;
 }

@@ -10,12 +10,16 @@ const Proxecto = (props) => {
           <p>“Existe un mapa de aldeas esquecidas que morre todas as mañás”.</p>
           <p>Miguel Anxo Fernán Vello.</p>
         </div>
-        <p>Este proxecto é unha táctica de resistencia fronte a desmemoria.</p>
-        Un arquivo vivo en torno o que reflectir arredor dos conflictos
-        ecolóxicos e sociais que atravesan a nosa história contemporánea.
-        <p>
+        <div className="text">
+          <p>
+            Este proxecto é unha táctica de resistencia fronte a desmemoria.
+          </p>
+          <p>
+            Un arquivo vivo en torno o que reflectir arredor dos conflictos
+            ecolóxicos e sociais que atravesan a nosa história contemporánea.
+          </p>
           <p>Unha ollada o pasado para confrontar as loitas do presente.</p>
-        </p>
+        </div>
       </div>
     </div>
   );
