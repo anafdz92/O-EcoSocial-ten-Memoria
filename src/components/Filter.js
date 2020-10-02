@@ -12,7 +12,9 @@ const Filter = (props) => {
   return (
     <>
       <form className="form">
-        <label htmlfor="date">FILTRADO POR DATA</label>
+        <label htmlfor="date" className="filter">
+          FILTRAR POR DATA
+        </label>
         <input
           type="text"
           id="date"

@@ -20,12 +20,12 @@ const conflicts = [
       " https://plataformanuncamais.wordpress.com/",
       "https://www.udc.es/dep/ps/grupo/varios/prest_es.pdf",
     ],
-    url: "../images/prestige.jpg",
+    url: "../src/images/prestige.jpg",
   },
   {
     id: 3,
     year: 2017,
-    name: "Oleada de Incendios",
+    name: "Vaga de Incendios",
     location: "Provincias de Ourense e Pontevedra",
     what:
       "O monocultivo de especies forestais pirófitas coma o eucalipto (das que son grandes beneficiarios empresas como o Grupo Ence ou Grupo Finsa) xunto ao despoboamento rural e a emerxencia climática, sentaron as bases para unha das vagas de incendios máis importantes dos últimos anos que en dúas semanas acabaron cunha superficie de máis de 70.000 km cuadrados",

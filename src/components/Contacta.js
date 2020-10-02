@@ -10,7 +10,11 @@ const Contacta = (props) => {
           información.
         </p>
         <p>Recomendacións, correccións e suxestións son sempre benvidas.</p>
-        <form action="" method="post" className="contactForm">
+        <form
+          action="https://formspree.io/f/mleodvon"
+          method="post"
+          className="contactForm"
+        >
           <fieldset className="fieldset">
             <legend> Sobre ti </legend>
             <div className="formContent">
