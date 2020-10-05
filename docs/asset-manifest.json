@@ -1,23 +1,29 @@
 {
   "files": {
-    "main.css": "/O-EcoSocial-ten-Memoria/static/css/main.56523ee1.chunk.css",
-    "main.js": "/O-EcoSocial-ten-Memoria/static/js/main.7a0755b4.chunk.js",
-    "main.js.map": "/O-EcoSocial-ten-Memoria/static/js/main.7a0755b4.chunk.js.map",
+    "main.css": "/O-EcoSocial-ten-Memoria/static/css/main.8b22287c.chunk.css",
+    "main.js": "/O-EcoSocial-ten-Memoria/static/js/main.c8844174.chunk.js",
+    "main.js.map": "/O-EcoSocial-ten-Memoria/static/js/main.c8844174.chunk.js.map",
     "runtime-main.js": "/O-EcoSocial-ten-Memoria/static/js/runtime-main.8d1b3f8b.js",
     "runtime-main.js.map": "/O-EcoSocial-ten-Memoria/static/js/runtime-main.8d1b3f8b.js.map",
-    "static/js/2.2de8cdde.chunk.js": "/O-EcoSocial-ten-Memoria/static/js/2.2de8cdde.chunk.js",
-    "static/js/2.2de8cdde.chunk.js.map": "/O-EcoSocial-ten-Memoria/static/js/2.2de8cdde.chunk.js.map",
+    "static/css/2.d48510fc.chunk.css": "/O-EcoSocial-ten-Memoria/static/css/2.d48510fc.chunk.css",
+    "static/js/2.b6220722.chunk.js": "/O-EcoSocial-ten-Memoria/static/js/2.b6220722.chunk.js",
+    "static/js/2.b6220722.chunk.js.map": "/O-EcoSocial-ten-Memoria/static/js/2.b6220722.chunk.js.map",
     "index.html": "/O-EcoSocial-ten-Memoria/index.html",
-    "precache-manifest.93aabc466a3e2f716a3831a63d4fd5e2.js": "/O-EcoSocial-ten-Memoria/precache-manifest.93aabc466a3e2f716a3831a63d4fd5e2.js",
+    "precache-manifest.be3050aed5221a9bd25c5eafad1a297a.js": "/O-EcoSocial-ten-Memoria/precache-manifest.be3050aed5221a9bd25c5eafad1a297a.js",
     "service-worker.js": "/O-EcoSocial-ten-Memoria/service-worker.js",
-    "static/css/main.56523ee1.chunk.css.map": "/O-EcoSocial-ten-Memoria/static/css/main.56523ee1.chunk.css.map",
-    "static/js/2.2de8cdde.chunk.js.LICENSE.txt": "/O-EcoSocial-ten-Memoria/static/js/2.2de8cdde.chunk.js.LICENSE.txt",
-    "static/media/main.scss": "/O-EcoSocial-ten-Memoria/static/media/img.001db304.jpg"
+    "static/css/2.d48510fc.chunk.css.map": "/O-EcoSocial-ten-Memoria/static/css/2.d48510fc.chunk.css.map",
+    "static/css/main.8b22287c.chunk.css.map": "/O-EcoSocial-ten-Memoria/static/css/main.8b22287c.chunk.css.map",
+    "static/js/2.b6220722.chunk.js.LICENSE.txt": "/O-EcoSocial-ten-Memoria/static/js/2.b6220722.chunk.js.LICENSE.txt",
+    "static/media/main.scss": "/O-EcoSocial-ten-Memoria/static/media/img.001db304.jpg",
+    "static/media/mulleres.jpg": "/O-EcoSocial-ten-Memoria/static/media/mulleres.f50a2348.jpg",
+    "static/media/prestige.jpg": "/O-EcoSocial-ten-Memoria/static/media/prestige.81d9b430.jpg",
+    "static/media/vigo.jpg": "/O-EcoSocial-ten-Memoria/static/media/vigo.f3e1c4d0.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.8d1b3f8b.js",
-    "static/js/2.2de8cdde.chunk.js",
-    "static/css/main.56523ee1.chunk.css",
-    "static/js/main.7a0755b4.chunk.js"
+    "static/css/2.d48510fc.chunk.css",
+    "static/js/2.b6220722.chunk.js",
+    "static/css/main.8b22287c.chunk.css",
+    "static/js/main.c8844174.chunk.js"
   ]
 }
