@@ -20,9 +20,16 @@ const EventDetail = (props) => {
             <i class="fas fa-times"></i>
           </button>
         </Link>
-        <img src={props.conflict.url} alt={props.conflict.name}></img>
+
         <div className="info">
           <h2>{props.conflict.name}</h2>
+          <div className="imgContainer">
+            <img
+              src={props.conflict.url}
+              alt={props.conflict.name}
+              className="eventImg"
+            ></img>
+          </div>
           <ul className="modalList">
             <li>Ano: {props.conflict.year}</li>
             <li>Lugar: {props.conflict.location}</li>

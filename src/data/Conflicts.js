@@ -1,3 +1,7 @@
+import vigo from "./../images/vigo.jpg";
+import mulleres from "./../images/mulleres.jpg";
+import prestige from "./../images/prestige.jpg";
+
 const conflicts = [
   {
     id: 1,
@@ -7,7 +11,7 @@ const conflicts = [
     what:
       "Fenosa merca por 900 millons de pesetas a concesión dunha mina de Lignito no val das Encrobas. Nace a sociedade `Lignitos de Meirama, S.A. Nese verán o consello de ministros presidido por Franco aproba un decreto de utilidade pública e declara de interés preferente o enclave da mina, autorizando a empresa a expropiación forzosa pola vía de urxencia`",
     links: ["https://www.youtube.com/watch?v=LJqJA2inpko"],
-    url: "../images/mulleres.jpg",
+    url: mulleres,
   },
   {
     id: 2,
@@ -20,7 +24,7 @@ const conflicts = [
       " https://plataformanuncamais.wordpress.com/",
       "https://www.udc.es/dep/ps/grupo/varios/prest_es.pdf",
     ],
-    url: "../src/images/prestige.jpg",
+    url: prestige,
   },
   {
     id: 3,
@@ -32,7 +36,7 @@ const conflicts = [
     links: [
       "https://www.lavanguardia.com/vida/20171019/432157474162/industria-fuego-galicia-xabier-vazquez-pumarino.html",
     ],
-    url: "../images/vigo.jpg",
+    url: vigo,
   },
 ];
 
