@@ -5,7 +5,7 @@ import prestige from "./../images/prestige.jpg";
 const conflicts = [
   {
     id: 1,
-    year: 1974,
+    year: "1974",
     name: "Primeiro plan de extracción de Fenosa en Encrobas",
     location: "Cerceda A Coruña",
     what:
@@ -15,7 +15,7 @@ const conflicts = [
   },
   {
     id: 2,
-    year: 2002,
+    year: "2002",
     name: "Desastre do Prestige",
     location: "Costa de Fisterra",
     what:
@@ -28,7 +28,7 @@ const conflicts = [
   },
   {
     id: 3,
-    year: 2017,
+    year: "2017",
     name: "Vaga de Incendios",
     location: "Provincias de Ourense e Pontevedra",
     what:

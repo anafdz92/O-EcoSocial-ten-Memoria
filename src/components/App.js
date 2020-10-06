@@ -11,10 +11,10 @@ const App = (props) => {
   const [items, setItems] = useState(Conflicts);
 
   //EVENT HANDLERS
-  const handleFilter = (data) => {
-    console.log(data);
-    //   setFilterContent(data);
-  };
+  // const handleFilter = (data) => {
+  //   console.log("manejando los filtros");
+  //   //   setFilterContent(data);
+  // };
 
   //RENDER FILTRADO POR AÑO
   console.log(items);
@@ -62,7 +62,7 @@ const App = (props) => {
       </header>
       {/* <Switch location={isModal ? previousLocation : location}> */}
       <Switch>
-        <Route exact path="/" component={Inicio} handleFilter={handleFilter} />
+        <Route exact path="/" component={Inicio} />
         <Route exact path="/Proxecto" component={Proxecto} />
         <Route exact path="/Contacta" component={Contacta} />
         <Route exact path="/line/:id" render={renderEvent} />

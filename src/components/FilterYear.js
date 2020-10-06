@@ -1,8 +1,11 @@
 import React from "react";
 
-const Filter = (props) => {
+const FilterYear = (props) => {
   const handleChange = (ev) => {
-    props.handleFilter(ev.target.value);
+    props.handleFilter({
+      value: ev.target.value,
+      key: "number",
+    });
   };
 
   //   const submitHandler = (ev) => {
@@ -13,7 +16,7 @@ const Filter = (props) => {
     <>
       <form className="form">
         <label htmlfor="date" className="filter">
-          FILTRAR POR DATA
+          FILTRAR POR ANO
         </label>
         <input
           type="text"
@@ -27,4 +30,4 @@ const Filter = (props) => {
   );
 };
 
-export default Filter;
+export default FilterYear;
