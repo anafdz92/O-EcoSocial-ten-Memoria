@@ -56,6 +56,9 @@ const Inicio = (props) => {
         <div className="animate">
           <h1 className="title"> O EcoSocial ten Memoria </h1>
         </div>
+        <button className="buttonFilter">
+          <i class="fas fa-sort-amount-down-alt"></i>
+        </button>
         <div className="filterContainer">
           <FilterYear handleFilter={handleFilter} />
           <FilterContent handleFilter={handleFilter} />
