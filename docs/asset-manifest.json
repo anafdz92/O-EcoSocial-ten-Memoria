@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/O-EcoSocial-ten-Memoria/static/css/main.66de85ca.chunk.css",
-    "main.js": "/O-EcoSocial-ten-Memoria/static/js/main.41ee7586.chunk.js",
-    "main.js.map": "/O-EcoSocial-ten-Memoria/static/js/main.41ee7586.chunk.js.map",
+    "main.css": "/O-EcoSocial-ten-Memoria/static/css/main.622ea32a.chunk.css",
+    "main.js": "/O-EcoSocial-ten-Memoria/static/js/main.2510d0d6.chunk.js",
+    "main.js.map": "/O-EcoSocial-ten-Memoria/static/js/main.2510d0d6.chunk.js.map",
     "runtime-main.js": "/O-EcoSocial-ten-Memoria/static/js/runtime-main.8d1b3f8b.js",
     "runtime-main.js.map": "/O-EcoSocial-ten-Memoria/static/js/runtime-main.8d1b3f8b.js.map",
     "static/css/2.d48510fc.chunk.css": "/O-EcoSocial-ten-Memoria/static/css/2.d48510fc.chunk.css",
     "static/js/2.ace4c903.chunk.js": "/O-EcoSocial-ten-Memoria/static/js/2.ace4c903.chunk.js",
     "static/js/2.ace4c903.chunk.js.map": "/O-EcoSocial-ten-Memoria/static/js/2.ace4c903.chunk.js.map",
     "index.html": "/O-EcoSocial-ten-Memoria/index.html",
-    "precache-manifest.7399fc38f162c9c38f98342667cef296.js": "/O-EcoSocial-ten-Memoria/precache-manifest.7399fc38f162c9c38f98342667cef296.js",
+    "precache-manifest.f5c610cc54f0bad5328126611437c81c.js": "/O-EcoSocial-ten-Memoria/precache-manifest.f5c610cc54f0bad5328126611437c81c.js",
     "service-worker.js": "/O-EcoSocial-ten-Memoria/service-worker.js",
     "static/css/2.d48510fc.chunk.css.map": "/O-EcoSocial-ten-Memoria/static/css/2.d48510fc.chunk.css.map",
-    "static/css/main.66de85ca.chunk.css.map": "/O-EcoSocial-ten-Memoria/static/css/main.66de85ca.chunk.css.map",
+    "static/css/main.622ea32a.chunk.css.map": "/O-EcoSocial-ten-Memoria/static/css/main.622ea32a.chunk.css.map",
     "static/js/2.ace4c903.chunk.js.LICENSE.txt": "/O-EcoSocial-ten-Memoria/static/js/2.ace4c903.chunk.js.LICENSE.txt",
     "static/media/main.scss": "/O-EcoSocial-ten-Memoria/static/media/img.001db304.jpg",
     "static/media/javiota.jpg": "/O-EcoSocial-ten-Memoria/static/media/javiota.778c3762.jpg",
@@ -24,7 +24,7 @@
     "static/js/runtime-main.8d1b3f8b.js",
     "static/css/2.d48510fc.chunk.css",
     "static/js/2.ace4c903.chunk.js",
-    "static/css/main.66de85ca.chunk.css",
-    "static/js/main.41ee7586.chunk.js"
+    "static/css/main.622ea32a.chunk.css",
+    "static/js/main.2510d0d6.chunk.js"
   ]
 }
