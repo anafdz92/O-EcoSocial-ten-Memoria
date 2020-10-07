@@ -26,6 +26,9 @@ const Inicio = (props) => {
     }
   };
 
+  const handleClick = (ev) => {
+    console.log("Me han clickado");
+  };
   // const [item, setItem] = useState(Conflicts);
 
   // const renderEvent = (props) => {
@@ -56,9 +59,13 @@ const Inicio = (props) => {
         <div className="animate">
           <h1 className="title"> O EcoSocial ten Memoria </h1>
         </div>
-        <button className="buttonFilter">
-          <i class="fas fa-sort-amount-down-alt"></i>
-        </button>
+        <div>
+          <button className="buttonFilter">
+            <p>Filtrar</p>
+            <i class="fas fa-sort"></i>
+          </button>
+        </div>
+
         <div className="filterContainer">
           <FilterYear handleFilter={handleFilter} />
           <FilterContent handleFilter={handleFilter} />
