@@ -4,7 +4,10 @@ const Contacta = (props) => {
   return (
     <div className="mainContainer">
       <div className="formContainer">
-        <h3>Contacta</h3>
+        <div className="typewriter">
+          <h3>Contacta</h3>
+        </div>
+
         <p>
           Podes colaborar co proxecto enviándonos documentación, recursos e
           información.

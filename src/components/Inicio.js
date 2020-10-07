@@ -7,6 +7,7 @@ import FilterYear from "./FilterYear";
 import FilterContent from "./FilterContent";
 import FilterKeyWord from "./FilterKeyWord";
 import conflicts from "../data/Conflicts";
+import ScrollAnimation from "react-animate-on-scroll";
 
 const Inicio = (props) => {
   const [numberFilter, setnumberFilter] = useState("");
@@ -52,7 +53,9 @@ const Inicio = (props) => {
   return (
     <>
       <section className="mainList">
-        <h1 className="title"> O EcoSocial ten Memoria </h1>
+        <div className="animate">
+          <h1 className="title"> O EcoSocial ten Memoria </h1>
+        </div>
         <div className="filterContainer">
           <FilterYear handleFilter={handleFilter} />
           <FilterContent handleFilter={handleFilter} />

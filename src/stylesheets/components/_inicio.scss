@@ -16,4 +16,59 @@
 .filterContainer {
   display: flex;
   justify-content: center;
+  align-items: center;
+  border: 4px #9b1b30;
+  border-style: dashed;
+  margin-bottom: 25px;
+  padding: 15px;
+}
+
+//ANIMATION
+.animate {
+  animation: fadeIn ease 10s;
+  -webkit-animation: fadeIn ease 10s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

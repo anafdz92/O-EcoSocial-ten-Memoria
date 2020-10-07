@@ -69,9 +69,9 @@ const App = (props) => {
         <Route>{"no match"}</Route>
       </Switch>
       {/* {isModal ? <Route exact path="/line/:id" render={renderEvent} /> : null} */}
-      <footer>
+      {/* <footer>
         <p>Holi soy el footer</p>
-      </footer>
+      </footer> */}
     </>
   );
 };

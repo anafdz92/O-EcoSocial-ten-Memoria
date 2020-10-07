@@ -26,8 +26,7 @@
     inset 0 0 20px rgba(255, 210, 0, 0.4), inset 0 0 30px rgba(220, 120, 0, 0.8);
   color: rgba(0, 0, 0, 0.8);
   //width: calc(8.5in - 15em);
-  width: 600px;
-
+  width: 750px;
   letter-spacing: 0.05em;
   line-height: 1.6;
   //padding: 5em 10em 15em 5em;
@@ -35,19 +34,40 @@
 }
 
 .formContainer h3 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid black; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
   margin-top: 20px;
   margin-bottom: 50px;
 }
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}
 
 .formContainer p {
-  width: 500px;
+  width: 600px;
   margin: 5px;
 }
 
-// .form {
-//   display: flex;
-//   flex-direction: column;
-// }
 .form fieldset {
   display: flex;
   flex-direction: column;
@@ -68,7 +88,7 @@
 }
 .share {
   height: 200px;
-  width: 400px;
+  width: 550px;
   margin: 10px;
   padding: 5px;
   border-radius: 4px;
@@ -96,7 +116,7 @@
   position: absolute;
   right: 0;
   bottom: 0;
-  margin-right: 50px;
+  margin-right: 70px;
   margin-bottom: 35px;
   transition: all 0.2s ease-in-out;
 }

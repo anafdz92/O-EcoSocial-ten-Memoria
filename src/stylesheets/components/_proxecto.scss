@@ -1,19 +1,3 @@
-// * {
-//   margin: 0;
-// }
-// body {
-//   background-color: green;
-// }
-
-// .header {
-//   height: 60vh;
-//   width: 100%;
-//   background-image: url("../images/img.jpg");
-//   background-size: cover;
-//   background-repeat: no-repeat;
-//   background-position: center;
-// }
-
 .container {
   display: flex;
   flex-direction: column;
@@ -40,28 +24,52 @@
   box-shadow: inset 0 0 75px rgba(255, 210, 0, 0.3),
     inset 0 0 20px rgba(255, 210, 0, 0.4), inset 0 0 30px rgba(220, 120, 0, 0.8);
   color: rgba(0, 0, 0, 0.8);
-  width: 600px;
-  height: 750px;
-
+  width: 750px;
   letter-spacing: 0.05em;
   line-height: 1.6;
 }
+
 .projectContainer h3 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid black; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
   margin-top: 80px;
 }
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}
+
 .projectContainer p {
   margin: 15px;
   padding: 0px;
 }
 
 .quote {
-  font-size: 13px;
+  font-size: 14px;
   margin-top: 50px;
   margin-left: 20px;
   margin-right: 25px;
-  width: 500px;
-  height: 150px;
-
+  margin-bottom: 50px;
+  width: 600px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -70,9 +78,67 @@
 .quote p {
   margin: 0px;
   flex-wrap: wrap;
+  animation: fadeIn ease 10s;
+  -webkit-animation: fadeIn ease 10s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .text {
-  width: 500px;
-  height: 150px;
+  margin-top: 40px;
+  margin-bottom: 80px;
+  width: 600px;
+  //height: 150px;
+}
+
+.imgCont {
+  height: 400px;
+  width: 600px;
+}
+.eventImg {
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
 }
