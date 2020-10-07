@@ -22,7 +22,9 @@ const EventDetail = (props) => {
         </Link>
 
         <div className="info">
-          <h2>{props.conflict.name}</h2>
+          <div>
+            <h2>{props.conflict.name}</h2>
+          </div>
           <div className="imgContainer">
             <img
               src={props.conflict.url}
