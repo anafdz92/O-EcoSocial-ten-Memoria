@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e16df59d17da66a9d6ba42d2e402dbfa",
+    "revision": "de71c174dca5ff015939bfc9d606e729",
     "url": "/O-EcoSocial-ten-Memoria/index.html"
   },
   {
-    "revision": "3e8669c91ebfb541154f",
+    "revision": "956bd513a88c093d9806",
     "url": "/O-EcoSocial-ten-Memoria/static/css/2.d48510fc.chunk.css"
   },
   {
-    "revision": "014ce0b59a76e4281279",
-    "url": "/O-EcoSocial-ten-Memoria/static/css/main.622ea32a.chunk.css"
+    "revision": "7549dd7ac88cd6694c0c",
+    "url": "/O-EcoSocial-ten-Memoria/static/css/main.63c3974e.chunk.css"
   },
   {
-    "revision": "3e8669c91ebfb541154f",
-    "url": "/O-EcoSocial-ten-Memoria/static/js/2.ace4c903.chunk.js"
+    "revision": "956bd513a88c093d9806",
+    "url": "/O-EcoSocial-ten-Memoria/static/js/2.45f53409.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/O-EcoSocial-ten-Memoria/static/js/2.ace4c903.chunk.js.LICENSE.txt"
+    "url": "/O-EcoSocial-ten-Memoria/static/js/2.45f53409.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "014ce0b59a76e4281279",
-    "url": "/O-EcoSocial-ten-Memoria/static/js/main.2510d0d6.chunk.js"
+    "revision": "7549dd7ac88cd6694c0c",
+    "url": "/O-EcoSocial-ten-Memoria/static/js/main.63f9bdc3.chunk.js"
   },
   {
     "revision": "5253a28735c26f1b737c",
