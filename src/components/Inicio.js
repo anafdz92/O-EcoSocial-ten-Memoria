@@ -13,6 +13,8 @@ const Inicio = (props) => {
   const [numberFilter, setnumberFilter] = useState("");
   const [placeFilter, setplaceFilter] = useState("");
   const [wordFilter, setwordFilter] = useState("");
+  const [showFilters, setShowFilters] = useState(false);
+  const [showPackFilters, setShowPackFilters] = useState(false);
 
   const handleFilter = (data) => {
     console.log("manejando los filtros", data);
@@ -24,6 +26,12 @@ const Inicio = (props) => {
     } else if (data.key === "word") {
       setwordFilter(data.value);
     }
+  };
+
+  const toggleFilter = () => {
+    setShowFilters(!showFilters);
+    setShowPackFilters(!showPackFilters);
+    console.log(showFilters);
   };
 
   const handleClick = (ev) => {
@@ -53,6 +61,18 @@ const Inicio = (props) => {
       return conflict.what.toUpperCase().includes(wordFilter.toUpperCase());
     });
 
+  //BORRAR BOTÓN
+  let buttonFilter = "buttonFilter";
+  let filterContainer = "hide";
+
+  if (showFilters === true) {
+    buttonFilter = "hide";
+  }
+
+  if (showPackFilters === true) {
+    filterContainer = "filterContainer";
+  }
+
   return (
     <>
       <section className="mainList">
@@ -60,13 +80,16 @@ const Inicio = (props) => {
           <h1 className="title"> O EcoSocial ten Memoria </h1>
         </div>
         <div>
-          <button className="buttonFilter">
+          <button className={buttonFilter} onClick={toggleFilter}>
             <p>Filtrar</p>
             <i class="fas fa-sort"></i>
           </button>
         </div>
 
-        <div className="filterContainer">
+        <div className={filterContainer}>
+          <button className="close">
+            <i class="fas fa-times"></i>
+          </button>
           <FilterYear handleFilter={handleFilter} />
           <FilterContent handleFilter={handleFilter} />
           <FilterKeyWord handleFilter={handleFilter} />
