@@ -36,6 +36,10 @@ const Inicio = (props) => {
     console.log(showFilters);
   };
 
+  // const handleScroll = (ev) => {
+  //   console.log("scroll");
+  // };
+
   const handleClick = (ev) => {
     console.log("Me han clickado");
   };

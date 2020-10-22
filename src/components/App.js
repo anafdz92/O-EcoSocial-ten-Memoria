@@ -10,6 +10,10 @@ import Line from "./Line";
 const App = (props) => {
   const [items, setItems] = useState(Conflicts);
 
+  const handleScroll = (ev) => {
+    console.log("scroll");
+  };
+
   //EVENT HANDLERS
   // const handleFilter = (data) => {
   //   console.log("manejando los filtros");
@@ -44,7 +48,7 @@ const App = (props) => {
     return <EventDetail conflict={foundConflict} />;
   };
   return (
-    <>
+    <div onScroll={handleScroll}>
       <header>
         <nav className="menu">
           <ul>
@@ -72,7 +76,7 @@ const App = (props) => {
       {/* <footer>
         <p>Holi soy el footer</p>
       </footer> */}
-    </>
+    </div>
   );
 };
 export default withRouter(App);
