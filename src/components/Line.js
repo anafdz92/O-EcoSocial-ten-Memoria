@@ -8,26 +8,24 @@ const Line = (props) => {
     .sort((a, b) => b.year - a.year)
     .map((item) => {
       return (
-        <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" duration="1s">
-          <li key={item.id}>
-            <div>
-              <time>{item.year}</time>
-              <p> {item.name}</p>
-              <p>{item.location}</p>
-              <Link
-                to={`/line/${item.id}`}
-                // to={{
-                //   pathname: `/line/${item.id}`,
-                //   state: { modal: true },
-                // }}
-              >
-                <button className="buttonPink">
-                  <i class="fas fa-info-circle"></i>
-                </button>
-              </Link>
-            </div>
-          </li>
-        </ScrollAnimation>
+        <li key={item.id} className="animate">
+          <div>
+            <time>{item.year}</time>
+            <p> {item.name}</p>
+            <p>{item.location}</p>
+            <Link
+              to={`/line/${item.id}`}
+              // to={{
+              //   pathname: `/line/${item.id}`,
+              //   state: { modal: true },
+              // }}
+            >
+              <button className="buttonPink">
+                <i class="fas fa-info-circle"></i>
+              </button>
+            </Link>
+          </div>
+        </li>
       );
     });
 

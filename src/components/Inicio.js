@@ -15,6 +15,7 @@ const Inicio = (props) => {
   const [wordFilter, setwordFilter] = useState("");
   const [showFilters, setShowFilters] = useState(false);
   const [showPackFilters, setShowPackFilters] = useState(false);
+  const [closeFilters, setCloseFilters] = useState(false);
 
   const handleFilter = (data) => {
     console.log("manejando los filtros", data);
@@ -31,6 +32,7 @@ const Inicio = (props) => {
   const toggleFilter = () => {
     setShowFilters(!showFilters);
     setShowPackFilters(!showPackFilters);
+    setCloseFilters(!closeFilters);
     console.log(showFilters);
   };
 
@@ -64,13 +66,16 @@ const Inicio = (props) => {
   //BORRAR BOTÓN
   let buttonFilter = "buttonFilter";
   let filterContainer = "hide";
+  let close = "close";
 
   if (showFilters === true) {
     buttonFilter = "hide";
   }
 
   if (showPackFilters === true) {
-    filterContainer = "filterContainer";
+    filterContainer = "filterContainer animate";
+  } else if (closeFilters === true) {
+    close = "hide";
   }
 
   return (
@@ -87,7 +92,7 @@ const Inicio = (props) => {
         </div>
 
         <div className={filterContainer}>
-          <button className="close">
+          <button className={close} onClick={toggleFilter}>
             <i class="fas fa-times"></i>
           </button>
           <FilterYear handleFilter={handleFilter} />
