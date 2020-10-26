@@ -4,9 +4,23 @@
   width: 6px;
   margin: 0 auto;
   padding-top: 50px;
-  background: //#009b77;
-    #006e51;
-  // #9b2335;
+  background: #006e51;
+  animation-name: visible;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+@keyframes animate {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(30px);
+  }
 }
 
 .line ul li::after {

@@ -33,12 +33,7 @@ const Inicio = (props) => {
     setShowFilters(!showFilters);
     setShowPackFilters(!showPackFilters);
     setCloseFilters(!closeFilters);
-    console.log(showFilters);
   };
-
-  // const handleScroll = (ev) => {
-  //   console.log("scroll");
-  // };
 
   const handleClick = (ev) => {
     console.log("Me han clickado");

@@ -10,16 +10,15 @@ import Line from "./Line";
 const App = (props) => {
   const [items, setItems] = useState(Conflicts);
 
-  const handleScroll = (ev) => {
-    console.log("scroll");
-  };
-
   //EVENT HANDLERS
   // const handleFilter = (data) => {
   //   console.log("manejando los filtros");
   //   //   setFilterContent(data);
   // };
 
+  const handleAnimation = (ev) => {
+    console.log("hi");
+  };
   //RENDER FILTRADO POR AÑO
   console.log(items);
   // const filteredCharacters = items.filter((item) => {
@@ -48,7 +47,7 @@ const App = (props) => {
     return <EventDetail conflict={foundConflict} />;
   };
   return (
-    <div onScroll={handleScroll}>
+    <div>
       <header>
         <nav className="menu">
           <ul>
@@ -66,7 +65,7 @@ const App = (props) => {
       </header>
       {/* <Switch location={isModal ? previousLocation : location}> */}
       <Switch>
-        <Route exact path="/" component={Inicio} />
+        <Route exact path="/" component={Inicio} onScroll={handleAnimation} />
         <Route exact path="/Proxecto" component={Proxecto} />
         <Route exact path="/Contacta" component={Contacta} />
         <Route exact path="/line/:id" render={renderEvent} />

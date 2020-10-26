@@ -8,8 +8,8 @@ const Line = (props) => {
     .sort((a, b) => b.year - a.year)
     .map((item) => {
       return (
-        <li key={item.id} className="animate">
-          <div>
+        <li key={item.id}>
+          <ScrollAnimation animateIn="fadeIn">
             <time>{item.year}</time>
             <p> {item.name}</p>
             <p>{item.location}</p>
@@ -24,7 +24,7 @@ const Line = (props) => {
                 <i class="fas fa-info-circle"></i>
               </button>
             </Link>
-          </div>
+          </ScrollAnimation>
         </li>
       );
     });
