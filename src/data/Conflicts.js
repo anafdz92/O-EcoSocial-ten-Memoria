@@ -38,6 +38,54 @@ const conflicts = [
     ],
     url: vigo,
   },
+  {
+    id: 3,
+    year: "2017",
+    name: "Vaga de Incendios",
+    location: "Provincias de Ourense e Pontevedra",
+    what:
+      "O monocultivo de especies forestais pirófitas coma o eucalipto (das que son grandes beneficiarios empresas como o Grupo Ence ou Grupo Finsa) xunto ao despoboamento rural e a emerxencia climática, sentaron as bases para unha das vagas de incendios máis importantes dos últimos anos que en dúas semanas acabaron cunha superficie de máis de 70.000 km cuadrados",
+    links: [
+      "https://www.lavanguardia.com/vida/20171019/432157474162/industria-fuego-galicia-xabier-vazquez-pumarino.html",
+    ],
+    url: vigo,
+  },
+  {
+    id: 3,
+    year: "2017",
+    name: "Vaga de Incendios",
+    location: "Provincias de Ourense e Pontevedra",
+    what:
+      "O monocultivo de especies forestais pirófitas coma o eucalipto (das que son grandes beneficiarios empresas como o Grupo Ence ou Grupo Finsa) xunto ao despoboamento rural e a emerxencia climática, sentaron as bases para unha das vagas de incendios máis importantes dos últimos anos que en dúas semanas acabaron cunha superficie de máis de 70.000 km cuadrados",
+    links: [
+      "https://www.lavanguardia.com/vida/20171019/432157474162/industria-fuego-galicia-xabier-vazquez-pumarino.html",
+    ],
+    url: vigo,
+  },
+  {
+    id: 3,
+    year: "2017",
+    name: "Vaga de Incendios",
+    location: "Provincias de Ourense e Pontevedra",
+    what:
+      "O monocultivo de especies forestais pirófitas coma o eucalipto (das que son grandes beneficiarios empresas como o Grupo Ence ou Grupo Finsa) xunto ao despoboamento rural e a emerxencia climática, sentaron as bases para unha das vagas de incendios máis importantes dos últimos anos que en dúas semanas acabaron cunha superficie de máis de 70.000 km cuadrados",
+    links: [
+      "https://www.lavanguardia.com/vida/20171019/432157474162/industria-fuego-galicia-xabier-vazquez-pumarino.html",
+    ],
+    url: vigo,
+  },
+  {
+    id: 3,
+    year: "2017",
+    name: "Vaga de Incendios",
+    location: "Provincias de Ourense e Pontevedra",
+    what:
+      "O monocultivo de especies forestais pirófitas coma o eucalipto (das que son grandes beneficiarios empresas como o Grupo Ence ou Grupo Finsa) xunto ao despoboamento rural e a emerxencia climática, sentaron as bases para unha das vagas de incendios máis importantes dos últimos anos que en dúas semanas acabaron cunha superficie de máis de 70.000 km cuadrados",
+    links: [
+      "https://www.lavanguardia.com/vida/20171019/432157474162/industria-fuego-galicia-xabier-vazquez-pumarino.html",
+    ],
+    url: vigo,
+  },
 ];
 
 export default conflicts;

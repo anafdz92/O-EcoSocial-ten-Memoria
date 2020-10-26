@@ -65,7 +65,7 @@ const App = (props) => {
       </header>
       {/* <Switch location={isModal ? previousLocation : location}> */}
       <Switch>
-        <Route exact path="/" component={Inicio} onScroll={handleAnimation} />
+        <Route exact path="/" component={Inicio} />
         <Route exact path="/Proxecto" component={Proxecto} />
         <Route exact path="/Contacta" component={Contacta} />
         <Route exact path="/line/:id" render={renderEvent} />

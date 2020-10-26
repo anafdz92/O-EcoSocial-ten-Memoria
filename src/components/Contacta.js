@@ -1,6 +1,26 @@
-import React from "react";
+import React, { useState, useEffect, useReducer } from "react";
+import FileUploader from "./FileUpLoader";
 
 const Contacta = (props) => {
+  const [selectedFile, setSelectedFile] = useState(null);
+
+  const onFileSelectSuccess = (data) => {
+    setSelectedFile(data);
+  };
+
+  const submitForm = () => {
+    const formData = new FormData();
+
+    formData.append("file", selectedFile);
+
+    // axios
+    //   .post(UPLOAD_URL, formData)
+    //   .then((res) => {
+    //     alert("File Upload success");
+    //   })
+    //   .catch((err) => alert("File Upload Error"));
+  };
+
   return (
     <div className="mainContainer">
       <div className="formContainer">
@@ -92,10 +112,21 @@ const Contacta = (props) => {
             </div>
             <div className="formContent">
               <label for="files">Documentos:</label>
-              <input type="file" name="files" id="files" className="files" />
+              {/* <input
+                type="file"
+                name="files"
+                id="files"
+                className="files"
+                value={selectedFile}
+                onChange={(e) => setSelectedFile(e.target.files[0])}
+              /> */}
+              <FileUploader
+                onFileSelectSuccess={(file) => setSelectedFile(file)}
+              />
             </div>
           </fieldset>
-          <button className="button">
+
+          <button className="button" onClick={submitForm}>
             <i class="far fa-paper-plane"></i>
           </button>
         </form>
