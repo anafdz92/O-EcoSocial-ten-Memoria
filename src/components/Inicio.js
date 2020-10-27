@@ -8,6 +8,7 @@ import FilterContent from "./FilterContent";
 import FilterKeyWord from "./FilterKeyWord";
 import conflicts from "../data/Conflicts";
 import ScrollAnimation from "react-animate-on-scroll";
+import ScrollToTop from "react-scroll-to-top";
 
 const Inicio = (props) => {
   const [numberFilter, setnumberFilter] = useState("");
@@ -88,6 +89,9 @@ const Inicio = (props) => {
             <p>Filtrar</p>
             <i class="fas fa-sort"></i>
           </button>
+        </div>
+        <div>
+          <ScrollToTop smooth color="#8f2033" />
         </div>
 
         <div className={filterContainer}>
