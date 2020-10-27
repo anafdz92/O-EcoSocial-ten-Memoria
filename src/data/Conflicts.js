@@ -39,7 +39,7 @@ const conflicts = [
     url: vigo,
   },
   {
-    id: 3,
+    id: 4,
     year: "2017",
     name: "Vaga de Incendios",
     location: "Provincias de Ourense e Pontevedra",
@@ -51,7 +51,7 @@ const conflicts = [
     url: vigo,
   },
   {
-    id: 3,
+    id: 5,
     year: "2017",
     name: "Vaga de Incendios",
     location: "Provincias de Ourense e Pontevedra",
@@ -63,7 +63,7 @@ const conflicts = [
     url: vigo,
   },
   {
-    id: 3,
+    id: 6,
     year: "2017",
     name: "Vaga de Incendios",
     location: "Provincias de Ourense e Pontevedra",
@@ -75,7 +75,7 @@ const conflicts = [
     url: vigo,
   },
   {
-    id: 3,
+    id: 7,
     year: "2017",
     name: "Vaga de Incendios",
     location: "Provincias de Ourense e Pontevedra",

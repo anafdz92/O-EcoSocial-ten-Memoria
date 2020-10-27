@@ -17,6 +17,7 @@ const Inicio = (props) => {
   const [showFilters, setShowFilters] = useState(false);
   const [showPackFilters, setShowPackFilters] = useState(false);
   const [closeFilters, setCloseFilters] = useState(false);
+  const [mouseEnter, setMouseEnter] = useState("");
 
   const handleFilter = (data) => {
     console.log("manejando los filtros", data);
@@ -38,6 +39,10 @@ const Inicio = (props) => {
 
   const handleClick = (ev) => {
     console.log("Me han clickado");
+  };
+
+  const handleMouseEnter = (ev) => {
+    setMouseEnter(ev.currentTarget);
   };
   // const [item, setItem] = useState(Conflicts);
 
@@ -77,6 +82,7 @@ const Inicio = (props) => {
   } else if (closeFilters === true) {
     close = "hide";
   }
+  //RENDER
 
   return (
     <>
@@ -102,7 +108,11 @@ const Inicio = (props) => {
           <FilterContent handleFilter={handleFilter} />
           <FilterKeyWord handleFilter={handleFilter} />
         </div>
-        <Line conflicts={filteredConflicts} />
+        <Line
+          conflicts={filteredConflicts}
+          handleMouseEnter={handleMouseEnter}
+          mouseEnter={mouseEnter}
+        />
         {/* <Switch>
           <Route path="/line/:id" render={renderEvent} />
           {/* <Events conflicts={Conflicts} /> */}
