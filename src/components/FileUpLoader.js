@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, Component } from "react";
 
 const FileUploader = (props, { onFileSelect }) => {
   const fileInput = useRef(null);
@@ -12,10 +12,10 @@ const FileUploader = (props, { onFileSelect }) => {
       <div className="file-uploader">
         <input type="file" onChange={handleFileInput} />
       </div>
-      <button
+      {/* <button
         onClick={(e) => fileInput.current && fileInput.current.click()}
         className="btn btn-primary"
-      ></button>
+      ></button> */}
     </>
   );
 };

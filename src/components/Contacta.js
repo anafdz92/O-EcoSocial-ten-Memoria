@@ -1,42 +1,56 @@
 import React, { useState, useEffect, useReducer } from "react";
 import FileUploader from "./FileUpLoader";
+import Typewriter from "typewriter-effect/dist/core";
 
 const Contacta = (props) => {
-  const [selectedFile, setSelectedFile] = useState(null);
+  // const [selectedFile, setSelectedFile] = useState(null);
 
-  const onFileSelectSuccess = (data) => {
-    setSelectedFile(data);
-  };
+  // const onFileSelectSuccess = (data) => {
+  //   setSelectedFile(data);
+  // };
 
-  const submitForm = () => {
-    const formData = new FormData();
+  // const submitForm = () => {
+  //   const formData = new FormData();
 
-    formData.append("file", selectedFile);
+  //   formData.append("file", selectedFile);
 
-    // axios
-    //   .post(UPLOAD_URL, formData)
-    //   .then((res) => {
-    //     alert("File Upload success");
-    //   })
-    //   .catch((err) => alert("File Upload Error"));
-  };
+  //   // axios
+  //   //   .post(UPLOAD_URL, formData)
+  //   //   .then((res) => {
+  //   //     alert("File Upload success");
+  //   //   })
+  //   //   .catch((err) => alert("File Upload Error"));
+  // };
 
   return (
     <div className="mainContainer">
       <div className="formContainer">
-        <div className="typewriter">
+        {/* <div className="typewriter">
           <h3>Contacta</h3>
-        </div>
+        </div> */}
+        <Typewriter
+          options={{
+            strings: ["Hello", "World"],
+            autoStart: true,
+            loop: true,
+          }}
+        />
 
         <p>
           Podes colaborar co proxecto enviándonos documentación, recursos e
           información.
         </p>
-        <p>Recomendacións, correccións e suxestións son sempre benvidas.</p>
+        <p>Recomendacións, correccións e suxestións son sempre benvidas:</p>
+        <div className="email">
+          <i class="fas fa-envelope-open-text"></i>
+          <p>memoriaecosocial@gmail.com</p>
+        </div>
+
         <form
           action="https://formspree.io/f/mleodvon"
           method="post"
           className="contactForm"
+          enctype="multipart/form-data"
         >
           <fieldset className="fieldset">
             <legend> Sobre ti </legend>
@@ -110,9 +124,16 @@ const Contacta = (props) => {
                 required
               />
             </div>
-            <div className="formContent">
+            {/* <div className="formContent">
               <label for="files">Documentos:</label>
-              {/* <input
+              <input
+                type="file"
+                name="files"
+                id="files"
+                className="files"
+                accept="image/png, image/jpeg"
+              /> */}
+            {/* <input
                 type="file"
                 name="files"
                 id="files"
@@ -120,13 +141,13 @@ const Contacta = (props) => {
                 value={selectedFile}
                 onChange={(e) => setSelectedFile(e.target.files[0])}
               /> */}
-              <FileUploader
+            {/* <FileUploader
                 onFileSelectSuccess={(file) => setSelectedFile(file)}
-              />
-            </div>
+              /> en la línea 129 falta un onClick submitform */}
+            {/* </div> */}
           </fieldset>
 
-          <button className="button" onClick={submitForm}>
+          <button className="button">
             <i class="far fa-paper-plane"></i>
           </button>
         </form>

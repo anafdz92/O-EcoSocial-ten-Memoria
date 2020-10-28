@@ -8,7 +8,9 @@ const EventDetail = (props) => {
   const linksli = props.conflict.links.map((link, index) => {
     return (
       <li key={index}>
-        <a href={link}>{link}</a>
+        <a href={link} target="blank">
+          {link}
+        </a>
       </li>
     );
   });
