@@ -17,7 +17,6 @@ const Inicio = (props) => {
   const [showFilters, setShowFilters] = useState(false);
   const [showPackFilters, setShowPackFilters] = useState(false);
   const [closeFilters, setCloseFilters] = useState(false);
-  const [mouseEnter, setMouseEnter] = useState("");
 
   const handleFilter = (data) => {
     console.log("manejando los filtros", data);
@@ -41,9 +40,9 @@ const Inicio = (props) => {
     console.log("Me han clickado");
   };
 
-  const handleMouseEnter = (ev) => {
-    setMouseEnter(ev.currentTarget);
-  };
+  // const handleMouseEnter = (ev) => {
+  //   ev.setMouseEnter("red");
+  // };
   // const [item, setItem] = useState(Conflicts);
 
   // const renderEvent = (props) => {
@@ -110,8 +109,8 @@ const Inicio = (props) => {
         </div>
         <Line
           conflicts={filteredConflicts}
-          handleMouseEnter={handleMouseEnter}
-          mouseEnter={mouseEnter}
+          // handleMouseEnter={handleMouseEnter}
+          // mouseEnter={mouseEnter}
         />
         {/* <Switch>
           <Route path="/line/:id" render={renderEvent} />
