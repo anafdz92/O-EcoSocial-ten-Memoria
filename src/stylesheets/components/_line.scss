@@ -119,16 +119,9 @@
   transform: scale(1.1);
 }
 
-.dot {
-  height: 8px;
-  width: 8px;
-  background-color: #9b1b30;
-  border-radius: 50%;
-  display: inline-block;
-}
-
 .red {
-  background-color: #9b1b30;
+  transition: 0.5s ease-in-out;
+  background: #9b1b30;
 }
 .green {
   background-color: #006e51;
