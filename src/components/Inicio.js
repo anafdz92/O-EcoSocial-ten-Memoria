@@ -7,7 +7,6 @@ import FilterYear from "./FilterYear";
 import FilterContent from "./FilterContent";
 import FilterKeyWord from "./FilterKeyWord";
 import conflicts from "../data/Conflicts";
-import ScrollAnimation from "react-animate-on-scroll";
 import ScrollToTop from "react-scroll-to-top";
 
 const Inicio = (props) => {
@@ -95,9 +94,6 @@ const Inicio = (props) => {
             <i class="fas fa-sort"></i>
           </button>
         </div>
-        <div>
-          <ScrollToTop smooth color="#8f2033" />
-        </div>
 
         <div className={filterContainer}>
           <button className={close} onClick={toggleFilter}>
@@ -107,6 +103,7 @@ const Inicio = (props) => {
           <FilterContent handleFilter={handleFilter} />
           <FilterKeyWord handleFilter={handleFilter} />
         </div>
+
         <Line
           conflicts={filteredConflicts}
           // handleMouseEnter={handleMouseEnter}
@@ -117,6 +114,16 @@ const Inicio = (props) => {
           {/* <Events conflicts={Conflicts} /> */}
         {/* </Switch> */}
       </section>
+      <ScrollToTop
+        smooth
+        color="#8f2033"
+        style={{
+          backgroundColor: "#129471",
+          color: "#b13046",
+          border: "none",
+          fontSize: "40px",
+        }}
+      />
     </>
   );
 };
