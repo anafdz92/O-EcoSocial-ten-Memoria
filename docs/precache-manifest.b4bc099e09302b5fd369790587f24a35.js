@@ -1,35 +1,47 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "323393f279b247bafae6a511486f30ad",
+    "revision": "5bfc9058d9942f43fd7c4c6adc944df3",
     "url": "/O-EcoSocial-ten-Memoria/index.html"
   },
   {
-    "revision": "a1bf00be0610f3f2ee98",
+    "revision": "37ae0f211de25a1921e0",
     "url": "/O-EcoSocial-ten-Memoria/static/css/2.d48510fc.chunk.css"
   },
   {
-    "revision": "51313d173abe135e37f1",
-    "url": "/O-EcoSocial-ten-Memoria/static/css/main.fbfea0b4.chunk.css"
+    "revision": "101e049274c150c8cfb5",
+    "url": "/O-EcoSocial-ten-Memoria/static/css/main.4cf2d5b0.chunk.css"
   },
   {
-    "revision": "a1bf00be0610f3f2ee98",
-    "url": "/O-EcoSocial-ten-Memoria/static/js/2.4ee9f108.chunk.js"
+    "revision": "37ae0f211de25a1921e0",
+    "url": "/O-EcoSocial-ten-Memoria/static/js/2.c0a98f4e.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/O-EcoSocial-ten-Memoria/static/js/2.4ee9f108.chunk.js.LICENSE.txt"
+    "url": "/O-EcoSocial-ten-Memoria/static/js/2.c0a98f4e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "51313d173abe135e37f1",
-    "url": "/O-EcoSocial-ten-Memoria/static/js/main.815211eb.chunk.js"
+    "revision": "101e049274c150c8cfb5",
+    "url": "/O-EcoSocial-ten-Memoria/static/js/main.f2c10c5a.chunk.js"
   },
   {
     "revision": "5253a28735c26f1b737c",
     "url": "/O-EcoSocial-ten-Memoria/static/js/runtime-main.8d1b3f8b.js"
   },
   {
+    "revision": "213b95c184ef16835defb9a3549cb7fb",
+    "url": "/O-EcoSocial-ten-Memoria/static/media/alcoa.213b95c1.jpg"
+  },
+  {
+    "revision": "4949a0a02387cdc747a40ede471ab010",
+    "url": "/O-EcoSocial-ten-Memoria/static/media/eume.4949a0a0.jpg"
+  },
+  {
     "revision": "001db304e99a169062478c90152157ef",
     "url": "/O-EcoSocial-ten-Memoria/static/media/img.001db304.jpg"
+  },
+  {
+    "revision": "77af99b65e9380632457006b78679420",
+    "url": "/O-EcoSocial-ten-Memoria/static/media/irixo.77af99b6.jpg"
   },
   {
     "revision": "778c37626ec44c2b50c9876818ab01c4",
