@@ -4,6 +4,7 @@ import prestige from "./../images/prestige.jpg";
 import alcoa from "./../images/alcoa.jpg";
 import eume from "./../images/eume.jpg";
 import irixo from "./../images/irixo.jpg";
+import corcoesto from "./../images/corcoesto.jpeg";
 const conflicts = [
   {
     id: 1,
@@ -78,15 +79,15 @@ const conflicts = [
   },
   {
     id: 7,
-    year: "2019",
+    year: "2020",
     name: "A minera de Corcoesto perde a batalla Xudicial",
-    location: "Provincias de Ourense e Pontevedra",
+    location: "Cabana de Bergantiños, A Coruña",
     what:
-      "O monocultivo de especies forestais pirófitas coma o eucalipto (das que son grandes beneficiarios empresas como o Grupo Ence ou Grupo Finsa) xunto ao despoboamento rural e a emerxencia climática, sentaron as bases para unha das vagas de incendios máis importantes dos últimos anos que en dúas semanas acabaron cunha superficie de máis de 70.000 km cuadrados",
+      "Despóis de máis de cinco anos de loita veciñal contra o proxecto de Megaminaría da canadense Edgewater a xustiza respalda a decisión da Xunta de paralizar a mina de ouro proxectada en Corcoesto. Xa en 2020 o Estado Español gañou en parís a arbitraxe que mantiña contra a empresa, así, o tribunal desestimaba a reclamación da minera en pro dunha compensación relativa a fase de estudos previos do proxecto",
     links: [
-      "https://www.lavanguardia.com/vida/20171019/432157474162/industria-fuego-galicia-xabier-vazquez-pumarino.html",
+      "https://galicia.economiadigital.es/directivos-y-empresas/la-ultima-derrota-de-la-minera-de-corcoesto-naufraga-con-el-arbitraje_20056959_102.html",
     ],
-    url: vigo,
+    url: corcoesto,
   },
 ];
 
