@@ -1,39 +1,45 @@
 import React, { useState, useEffect, useReducer } from "react";
 import FileUploader from "./FileUpLoader";
-import Typewriter from "typewriter-effect/dist/core";
+import Typewriter from "typewriter-effect";
+import axios from "axios";
 
 const Contacta = (props) => {
-  // const [selectedFile, setSelectedFile] = useState(null);
+  const [selectedFile, setSelectedFile] = useState(null);
+  const [fileImg, setFileImg] = useState("");
 
-  // const onFileSelectSuccess = (data) => {
-  //   setSelectedFile(data);
-  // };
+  const onFileSelectSuccess = (data) => {
+    setSelectedFile(data);
+  };
 
-  // const submitForm = () => {
-  //   const formData = new FormData();
+  const uploadFile = (file) => {
+    console.log("file");
+    const formData = new FormData();
 
-  //   formData.append("file", selectedFile);
+    formData.append("source", file);
+    formData.append("key", "6d207e02198a847aa98d0a2a901485a5");
 
-  //   // axios
-  //   //   .post(UPLOAD_URL, formData)
-  //   //   .then((res) => {
-  //   //     alert("File Upload success");
-  //   //   })
-  //   //   .catch((err) => alert("File Upload Error"));
-  // };
+    axios
+      .post(
+        "https://cors-anywhere.herokuapp.com/https://freeimage.host/api/1/upload",
+        formData
+      )
+      .then((res) => {
+        setFileImg(res.data.image.url);
+      })
+      .catch((err) => alert("File Upload Error"));
+  };
 
   return (
     <div className="mainContainer">
       <div className="formContainer">
-        {/* <div className="typewriter">
+        <div className="typewriter">
           <h3>Contacta</h3>
-        </div> */}
+        </div>
         <Typewriter
           options={{
             strings: ["Hello", "World"],
-            autoStart: true,
-            loop: true,
           }}
+          className="hey"
         />
 
         <p>
@@ -124,27 +130,19 @@ const Contacta = (props) => {
                 required
               />
             </div>
-            {/* <div className="formContent">
+            <div className="formContent">
               <label for="files">Documentos:</label>
-              <input
+              {/* <input
                 type="file"
                 name="files"
                 id="files"
                 className="files"
                 accept="image/png, image/jpeg"
               /> */}
-            {/* <input
-                type="file"
-                name="files"
-                id="files"
-                className="files"
-                value={selectedFile}
-                onChange={(e) => setSelectedFile(e.target.files[0])}
-              /> */}
-            {/* <FileUploader
-                onFileSelectSuccess={(file) => setSelectedFile(file)}
-              /> en la línea 129 falta un onClick submitform */}
-            {/* </div> */}
+              <FileUploader onFileSelectSuccess={(file) => uploadFile(file)} />{" "}
+              en la línea 129 falta un onClick submitform
+            </div>
+            <input type="hidden" name="Intento" value={fileImg} />
           </fieldset>
 
           <button className="button">
