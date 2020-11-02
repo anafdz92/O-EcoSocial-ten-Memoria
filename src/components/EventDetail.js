@@ -52,10 +52,21 @@ const EventDetail = (props) => {
             </div>
           </div>
           <ul className="modalList">
-            <li>Ano: {props.conflict.year}</li>
-            <li>Lugar: {props.conflict.location}</li>
-            <li>O que: {props.conflict.what}</li>
-            <ul className="links">Enlaces: {linksli} </ul>
+            <li>
+              <p className="quoteTitle">Ano: </p>
+              <p> {props.conflict.year}</p>
+            </li>
+            <li>
+              <p className="quoteTitle">Lugar: </p>
+              <p> {props.conflict.location}</p>
+            </li>
+            <li className="what">
+              <p> {props.conflict.what}</p>
+            </li>
+            <ul className="links">
+              <p className="quoteTitle">Enlaces: </p>
+              <p> {linksli}</p>
+            </ul>
           </ul>
         </div>
       </div>
