@@ -32,15 +32,13 @@ const Contacta = (props) => {
   return (
     <div className="mainContainer">
       <div className="formContainer">
-        <div className="typewriter">
-          <h3>Contacta</h3>
-        </div>
-        <Typewriter
-          options={{
-            strings: ["Hello", "World"],
-          }}
-          className="hey"
-        />
+        <h3 className="contactTitle">
+          <Typewriter
+            onInit={(typewriter) => {
+              typewriter.typeString("Contacta").start();
+            }}
+          />
+        </h3>
 
         <p>
           Podes colaborar co proxecto enviándonos documentación, recursos e
