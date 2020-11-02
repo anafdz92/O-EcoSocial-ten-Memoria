@@ -22,6 +22,22 @@ const Proxecto = (props) => {
         </div>
         <div className="imgCont">
           <img src={javiota} alt={"Xosé Suárez"} className="eventImg"></img>
+          <div class="infoImgProject">
+            <p>
+              <a
+                href={
+                  "https://www.xlsemanal.com/conocer/arte/20180506/jose-suarez-el-fotografo-cosmopolita.html"
+                }
+                target="blank"
+              >
+                Click AQUÍ pra coñecer a Fonte da Imaxe
+              </a>
+            </p>
+            <p className="infoDetail">
+              <small>Autor: José Suarez </small>
+              <small>Data:1936 </small>
+            </p>
+          </div>
         </div>
         <div className="text">
           <p>

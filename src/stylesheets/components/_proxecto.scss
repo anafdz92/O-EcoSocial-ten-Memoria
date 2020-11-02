@@ -107,6 +107,23 @@
 .imgCont {
   height: 400px;
   width: 600px;
+  position: relative;
+  float: left;
+  overflow: hidden;
+}
+.infoImgProject {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.5);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#50000000,endColorstr=#50000000);
+  width: 600px;
+  color: #fff;
+  padding: 10px;
+}
+.imgCont:hover .infoImgProject {
+  display: block;
 }
 .eventImg {
   height: 100%;
@@ -118,4 +135,8 @@
   margin: 30px;
   font-size: 25px;
   font-weight: bold;
+}
+.infoDetail {
+  display: flex;
+  flex-direction: column;
 }

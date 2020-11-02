@@ -97,6 +97,23 @@
   height: 300px;
   width: 400px;
   margin-top: 50px;
+  position: relative;
+  float: left;
+  overflow: hidden;
+}
+.infoImg {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.5);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#50000000,endColorstr=#50000000);
+  width: 400px;
+  color: #fff;
+  padding: 10px;
+}
+.imgContainer:hover .infoImg {
+  display: block;
 }
 .eventImg {
   height: 100%;

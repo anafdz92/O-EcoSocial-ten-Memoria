@@ -15,6 +15,9 @@ const conflicts = [
       "Fenosa merca por 900 millons de pesetas a concesión dunha mina de Lignito no val das Encrobas. Nace a sociedade `Lignitos de Meirama, S.A. Nese verán o consello de ministros presidido por Franco aproba un decreto de utilidade pública e declara de interés preferente o enclave da mina, autorizando a empresa a expropiación forzosa pola vía de urxencia`",
     links: ["https://www.youtube.com/watch?v=LJqJA2inpko"],
     url: mulleres,
+    imgFont:
+      "https://www.lavozdegalicia.es/album/enfoque/2019/01/16/as-encrobas/01101547650588172615640.htm",
+    date: "1977",
   },
   {
     id: 2,
@@ -28,6 +31,8 @@ const conflicts = [
       "https://www.udc.es/dep/ps/grupo/varios/prest_es.pdf",
     ],
     url: prestige,
+    imgFont: "https://prestige.lavozdegalicia.es/",
+    date: "13/11/2002",
   },
   {
     id: 3,
@@ -40,6 +45,9 @@ const conflicts = [
       "https://www.lavanguardia.com/vida/20171019/432157474162/industria-fuego-galicia-xabier-vazquez-pumarino.html",
     ],
     url: vigo,
+    imgFont:
+      "https://elcierredigital.com/factor-ambiental/953278748/causas-cerradas-incendios-galicia.html",
+    date: "15/10/2017",
   },
   {
     id: 4,
@@ -52,6 +60,9 @@ const conflicts = [
       "https://www.nosdiario.gal/articulo/economia/goberno-estatal-desbota-expropiar-nacionalizar-alcoa/20201028161354107819.html",
     ],
     url: alcoa,
+    date: "4 / 10 / 2020",
+    imgFont:
+      "https://www.lavanguardia.com/economia/20201004/483849548508/trabajadores-fabrica-san-cibrao-alcoa-huelga-indefinida.html",
   },
   {
     id: 5,
@@ -64,6 +75,9 @@ const conflicts = [
       "https://www.lavanguardia.com/vida/20171019/432157474162/industria-fuego-galicia-xabier-vazquez-pumarino.html",
     ],
     url: eume,
+    date: "15/10/2020",
+    imgFont:
+      "https://www.elidealgallego.com/articulo/galicia/pontedeume-xunta-contaminacion-rio-eume/20201015135031447169.html",
   },
   {
     id: 6,
@@ -76,6 +90,9 @@ const conflicts = [
       "https://www.farodevigo.es/galicia/2012/04/22/centenares-manifestantes-lalin-incineradora-o-17663692.html",
     ],
     url: irixo,
+    date: "23/4/2012",
+    imgFont:
+      "https://www.ecoticias.com/residuos-reciclaje/64746/Centenares-personas-manifiestan-Lalin-incineradora-O-Irixo",
   },
   {
     id: 7,
@@ -88,6 +105,9 @@ const conflicts = [
       "https://galicia.economiadigital.es/directivos-y-empresas/la-ultima-derrota-de-la-minera-de-corcoesto-naufraga-con-el-arbitraje_20056959_102.html",
     ],
     url: corcoesto,
+    date: "15/03/2019",
+    imgFont:
+      "https://www.galiciapress.es/texto-diario/mostrar/1357004/supremo-avala-negativa-xunta-proyecto-corcoesto-minera-agota-via-judicial",
   },
 ];
 

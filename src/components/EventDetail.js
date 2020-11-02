@@ -40,12 +40,22 @@ const EventDetail = (props) => {
               alt={props.conflict.name}
               className="eventImg"
             ></img>
+            <div class="infoImg">
+              <p>
+                <a href={props.conflict.imgFont} target="blank">
+                  Click AQUÍ pra coñecer a Fonte da Imaxe
+                </a>
+              </p>
+              <p>
+                <small>Data de publicación: {props.conflict.date}</small>
+              </p>
+            </div>
           </div>
           <ul className="modalList">
             <li>Ano: {props.conflict.year}</li>
             <li>Lugar: {props.conflict.location}</li>
             <li>O que: {props.conflict.what}</li>
-            <ul className="links">Enlaces: {linksli}</ul>
+            <ul className="links">Enlaces: {linksli} </ul>
           </ul>
         </div>
       </div>
