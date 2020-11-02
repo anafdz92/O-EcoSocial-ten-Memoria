@@ -8,6 +8,7 @@ import FilterContent from "./FilterContent";
 import FilterKeyWord from "./FilterKeyWord";
 import conflicts from "../data/Conflicts";
 import ScrollToTop from "react-scroll-to-top";
+import Typewriter from "typewriter-effect";
 
 const Inicio = (props) => {
   const [numberFilter, setnumberFilter] = useState("");
@@ -86,7 +87,13 @@ const Inicio = (props) => {
     <>
       <section className="mainList">
         <div className="animate">
-          <h1 className="title"> O EcoSocial ten Memoria </h1>
+          <h1 className="title">
+            <Typewriter
+              onInit={(typewriter) => {
+                typewriter.typeString("O Ecosocial ten Memoria").start();
+              }}
+            />
+          </h1>
         </div>
         <div>
           <button className={buttonFilter} onClick={toggleFilter}>

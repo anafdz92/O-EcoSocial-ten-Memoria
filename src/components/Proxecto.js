@@ -1,13 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import javiota from "./../images/javiota.jpg";
+import Typewriter from "typewriter-effect";
 
 const Proxecto = (props) => {
   return (
     <div className="container">
       <div className="projectContainer">
         <div className="typewriter">
-          <h3> O Proxecto</h3>
+          <h3 className="projectTitle">
+            <Typewriter
+              onInit={(typewriter) => {
+                typewriter.typeString("O Proxecto").start();
+              }}
+            />
+          </h3>
         </div>
         <div className="quote">
           <p>“Existe un mapa de aldeas esquecidas que morre todas as mañás”.</p>
