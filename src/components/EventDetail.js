@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { withRouter } from "react-router-dom";
+import Typewriter from "typewriter-effect";
 
 const EventDetail = (props) => {
   console.log(props);
@@ -24,8 +25,14 @@ const EventDetail = (props) => {
         </Link>
 
         <div className="info">
-          <div>
-            <h2>{props.conflict.name}</h2>
+          <div className="titleContainer">
+            <h2>
+              <Typewriter
+                onInit={(typewriter) => {
+                  typewriter.typeString(props.conflict.name).start();
+                }}
+              />
+            </h2>
           </div>
           <div className="imgContainer">
             <img
