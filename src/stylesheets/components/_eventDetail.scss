@@ -134,4 +134,10 @@
 
 .what {
   padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.what p {
+  margin: 15px;
 }

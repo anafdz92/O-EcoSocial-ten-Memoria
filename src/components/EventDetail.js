@@ -61,7 +61,9 @@ const EventDetail = (props) => {
               <p> {props.conflict.location}</p>
             </li>
             <li className="what">
-              <p> {props.conflict.what}</p>
+              <p> {props.conflict.p1}</p>
+              <p> {props.conflict.p2}</p>
+              <p> {props.conflict.p3}</p>
             </li>
             <ul className="links">
               <p className="quoteTitle">Enlaces: </p>

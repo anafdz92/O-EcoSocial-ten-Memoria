@@ -54,8 +54,13 @@ const conflicts = [
     year: "2020",
     name: "Folga dos Traballadores de Alcoa",
     location: "Cervo, Lugo",
-    what:
-      " Despóis de meses de negociacións, a fábrica de Aluminios de Alcoa-San Cibrao péchase en banda rexeitando a venda a compañía de Liberty House e o ofrecemento do estado para facerse coa planta. Tras semanas de folga indefinida por parte dxs traballadores, e o bloqueo da circulación da producción, a compañía termina por executar os ERES poñendo na rúa a máis de 500 traballadorxs. Non debemos esquecer que Alcoa ten unha débeda ecolóxica ca Mariña en forma de balsa de lodos tóxicos, e o ecoloxismo debe por suposto denunciar esta realidade, máis tamén plantexar alternativas de emprego sostible. A deslocalización de Alcoa é un claro exemplo de dumping ambiental onde a industria desplázase para abaratar custos en recursos e residuos emitidos ao medio ambiente. Nesta operación as clases traballadoras pagan as consecuencias ca perda do seu emprego. A decisión de Alcoa de parar a producción e despedir a 524 traballadores queda agora en máns do Tribunal Superior de xustiza de Galiza.",
+    p1:
+      " Despóis de meses de negociacións, a fábrica de Aluminios de Alcoa-San Cibrao péchase en banda rexeitando a venda a compañía de Liberty House e o ofrecemento do estado para facerse coa planta. Tras semanas de folga indefinida por parte dxs traballadores, e o bloqueo da circulación da producción, a compañía termina por executar os ERES poñendo na rúa a máis de 500 traballadorxs.",
+    p2:
+      " Non debemos esquecer que Alcoa ten unha débeda ecolóxica ca Mariña en forma de balsa de lodos tóxicos, e o ecoloxismo debe por suposto denunciar esta realidade, máis tamén plantexar alternativas de emprego sostible. A deslocalización de Alcoa é un claro exemplo de dumping ambiental onde a industria desplázase para abaratar custos en recursos e residuos emitidos ao medio ambiente. ",
+
+    p3:
+      "Nesta operación as clases traballadoras pagan as consecuencias ca perda do seu emprego. A decisión de Alcoa de parar a producción e despedir a 524 traballadores queda agora en máns do Tribunal Superior de xustiza de Galiza.",
     links: [
       "https://www.nosdiario.gal/articulo/economia/goberno-estatal-desbota-expropiar-nacionalizar-alcoa/20201028161354107819.html",
     ],

@@ -64,7 +64,7 @@ const Inicio = (props) => {
         .includes(placeFilter.toUpperCase());
     })
     .filter((conflict) => {
-      return conflict.what.toUpperCase().includes(wordFilter.toUpperCase());
+      return conflict.p1.toUpperCase().includes(wordFilter.toUpperCase());
     });
 
   //BORRAR BOTÓN
