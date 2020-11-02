@@ -9,16 +9,18 @@ const Line = (props) => {
     .map((item) => {
       return (
         <li key={item.id}>
-          <ScrollAnimation animateIn="fadeIn">
-            <time>{item.year}</time>
-            <p> {item.name}</p>
-            <p>{item.location}</p>
-            <Link to={`/line/${item.id}`}>
-              <button className="buttonPink">
-                <i class="fas fa-info-circle"></i>
-              </button>
-            </Link>
-          </ScrollAnimation>
+          <Link to={`/line/${item.id}`}>
+            <ScrollAnimation animateIn="fadeIn">
+              <time>{item.year}</time>
+              <p> {item.name}</p>
+              <p>{item.location}</p>
+              <Link to={`/line/${item.id}`}>
+                <button className="buttonPink">
+                  <i class="fas fa-info-circle"></i>
+                </button>
+              </Link>
+            </ScrollAnimation>
+          </Link>
         </li>
       );
     });

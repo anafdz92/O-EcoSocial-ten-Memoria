@@ -72,7 +72,7 @@ const conflicts = [
     what:
       "A Xunta declara a 'situación de emerxencia' e mantén a prohibición do consumo de auga en Pontedeume mentres pide responsabilidades a Endesa pola xestión do embalse do río, emplazado en territorio de Parque Natural. Este non é un feito illado, a contaminación, degradación e vertidos “crónicos” son continuos no Eume e en moitos ríos con vertidos puntuais agudos e graves. A propia Augas de Galicia no Plan hidrolóxico Galicia-Costa 2015-2021 afirmaba que o 21% das masas superficiais naturais de auga tiñan un estado ecolóxico entre moderado, deficiente ou malo.",
     links: [
-      "https://www.lavanguardia.com/vida/20171019/432157474162/industria-fuego-galicia-xabier-vazquez-pumarino.html",
+      "https://www.nosdiario.gal/articulo/social/investigan-posibel-vertedura-rio-eume/20201007192518106445.html",
     ],
     url: eume,
     date: "15/10/2020",
