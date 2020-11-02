@@ -102,7 +102,7 @@ const Contacta = (props) => {
                 type="text"
                 name="conflict"
                 id="conflict"
-                placeholder="Desastre do Prestige"
+                placeholder="O Prestige"
                 required
               />
             </div>
@@ -129,16 +129,8 @@ const Contacta = (props) => {
               />
             </div>
             <div className="formContent">
-              <label for="files">Documentos:</label>
-              {/* <input
-                type="file"
-                name="files"
-                id="files"
-                className="files"
-                accept="image/png, image/jpeg"
-              /> */}
-              <FileUploader onFileSelectSuccess={(file) => uploadFile(file)} />{" "}
-              en la línea 129 falta un onClick submitform
+              <label for="files">Imaxes:</label>
+              <FileUploader onFileSelectSuccess={(file) => uploadFile(file)} />
             </div>
             <input type="hidden" name="Intento" value={fileImg} />
           </fieldset>
