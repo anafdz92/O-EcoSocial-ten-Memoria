@@ -4,43 +4,16 @@ import ScrollAnimation from "react-animate-on-scroll";
 import "animate.css/animate.min.css";
 
 const Line = (props) => {
-  const [color, setColor] = useState("");
-
-  // const filteredMouseEnter = props.conflicts.filter((conflict) => {
-  //   return conflict === props.mouseEnter;
-  // });
-
-  // const handleEnter = (ev) => {
-  //   props.handleMouseEnter(ev.currentTarget);
-  //   console.log(ev.currentTarget);
-  // };
-  let style = "green";
-  if (color === "red") {
-    style = "red";
-  } else if (color === "green") {
-    style = "green";
-  }
   const dotList = props.conflicts
     .sort((a, b) => b.year - a.year)
     .map((item) => {
       return (
-        <li
-          key={item.id}
-          onMouseEnter={() => setColor("red")}
-          onMouseLeave={() => setColor("green")}
-          className={style}
-        >
+        <li key={item.id}>
           <ScrollAnimation animateIn="fadeIn">
             <time>{item.year}</time>
             <p> {item.name}</p>
             <p>{item.location}</p>
-            <Link
-              to={`/line/${item.id}`}
-              // to={{
-              //   pathname: `/line/${item.id}`,
-              //   state: { modal: true },
-              // }}
-            >
+            <Link to={`/line/${item.id}`}>
               <button className="buttonPink">
                 <i class="fas fa-info-circle"></i>
               </button>

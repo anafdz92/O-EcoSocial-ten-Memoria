@@ -9,6 +9,7 @@
   animation-duration: 1s;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
+  background-color: #006e51;
 }
 @keyframes animate {
   0% {
@@ -35,7 +36,7 @@
   background: inherit;
 }
 .line ul li:hover:after {
-  background-color: blue;
+  background-color: #8f2033;
 }
 .line ul li div {
   display: flex;
@@ -119,12 +120,4 @@
   text-decoration: none;
   cursor: pointer;
   transform: scale(1.1);
-}
-
-.red {
-  transition: 0.5s ease-in-out;
-  background: #9b1b30;
-}
-.green {
-  background-color: #006e51;
 }
