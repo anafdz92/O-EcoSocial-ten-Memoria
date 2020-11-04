@@ -11,8 +11,10 @@ const conflicts = [
     year: "1974",
     name: "Primeiro plan de extracción de Fenosa en Encrobas",
     location: "Cerceda A Coruña",
-    what:
+    p1:
       "Fenosa merca por 900 millons de pesetas a concesión dunha mina de Lignito no val das Encrobas. Nace a sociedade `Lignitos de Meirama, S.A. Nese verán o consello de ministros presidido por Franco aproba un decreto de utilidade pública e declara de interés preferente o enclave da mina, autorizando a empresa a expropiación forzosa pola vía de urxencia`",
+    p2: "",
+    p3: "",
     links: ["https://www.youtube.com/watch?v=LJqJA2inpko"],
     url: mulleres,
     imgFont:
@@ -24,8 +26,10 @@ const conflicts = [
     year: "2002",
     name: "O Prestige",
     location: "Costa de Fisterra",
-    what:
+    p1:
       "O petrolero Prestige sofre unha vía de auga a 28 millas da costa de Fisterra. A Madrugada do 19 de novembro partiuse en dous afundindose cunha carga de 77.000t de crudo que provocarían un dos maiores desastres ecosociais da Galiza. ",
+    p2: "",
+    p3: "",
     links: [
       " https://plataformanuncamais.wordpress.com/",
       "https://www.udc.es/dep/ps/grupo/varios/prest_es.pdf",
@@ -39,8 +43,10 @@ const conflicts = [
     year: "2017",
     name: "Vaga de Incendios",
     location: "Provincias de Ourense e Pontevedra",
-    what:
+    p1:
       "O monocultivo de especies forestais pirófitas coma o eucalipto (das que son grandes beneficiarios empresas como o Grupo Ence ou Grupo Finsa) xunto ao despoboamento rural e a emerxencia climática, sentaron as bases para unha das vagas de incendios máis importantes dos últimos anos que en dúas semanas acabaron cunha superficie de máis de 70.000 km cuadrados",
+    p2: "",
+    p3: "",
     links: [
       "https://www.lavanguardia.com/vida/20171019/432157474162/industria-fuego-galicia-xabier-vazquez-pumarino.html",
     ],
@@ -74,8 +80,11 @@ const conflicts = [
     year: "2020",
     name: "Verteduras no río Eume",
     location: "Pontedeume, A Coruña",
-    what:
-      "A Xunta declara a 'situación de emerxencia' e mantén a prohibición do consumo de auga en Pontedeume mentres pide responsabilidades a Endesa pola xestión do embalse do río, emplazado en territorio de Parque Natural. Este non é un feito illado, a contaminación, degradación e vertidos “crónicos” son continuos no Eume e en moitos ríos con vertidos puntuais agudos e graves. A propia Augas de Galicia no Plan hidrolóxico Galicia-Costa 2015-2021 afirmaba que o 21% das masas superficiais naturais de auga tiñan un estado ecolóxico entre moderado, deficiente ou malo.",
+    p1:
+      "A Xunta declara a 'situación de emerxencia' e mantén a prohibición do consumo de auga en Pontedeume mentres pide responsabilidades a Endesa pola xestión do embalse do río, emplazado en territorio de Parque Natural.",
+    p2:
+      "Este non é un feito illado, a contaminación, degradación e vertidos “crónicos” son continuos no Eume e en moitos ríos con vertidos puntuais agudos e graves. A propia Augas de Galicia no Plan hidrolóxico Galicia-Costa 2015-2021 afirmaba que o 21% das masas superficiais naturais de auga tiñan un estado ecolóxico entre moderado, deficiente ou malo.",
+    p3: "",
     links: [
       "https://www.nosdiario.gal/articulo/social/investigan-posibel-vertedura-rio-eume/20201007192518106445.html",
     ],
@@ -89,8 +98,11 @@ const conflicts = [
     year: "2012",
     name: "Loita contra a Incineradora de Sogama",
     location: "Irixo, Lalín, Ourense",
-    what:
-      "A resposta da veciñanza e as manifestacións multitudinarias en contra do proxecto de Sogama para instalar unha Incineradora de Residuos en o Irixo, saldarase tras case un ano de loita ca derogación do proxecto por parte da Xunta. A resposta social dará lugar a unha reforma do plan de residuos sólidos de Galicia e a ampliación da incineradora de Cerceda.",
+    p1:
+      "A resposta da veciñanza e as manifestacións multitudinarias en contra do proxecto de Sogama para instalar unha Incineradora de Residuos en o Irixo, saldarase tras case un ano de loita ca derogación do proxecto por parte da Xunta.",
+    p2:
+      "A resposta social dará lugar a unha reforma do plan de residuos sólidos de Galicia e a ampliación da incineradora de Cerceda.",
+    p3: "",
     links: [
       "https://www.farodevigo.es/galicia/2012/04/22/centenares-manifestantes-lalin-incineradora-o-17663692.html",
     ],
@@ -104,8 +116,11 @@ const conflicts = [
     year: "2020",
     name: "A minera de Corcoesto perde a batalla Xudicial",
     location: "Cabana de Bergantiños, A Coruña",
-    what:
-      "Despóis de máis de cinco anos de loita veciñal contra o proxecto de Megaminaría da canadense Edgewater a xustiza respalda a decisión da Xunta de paralizar a mina de ouro proxectada en Corcoesto. Xa en 2020 o Estado Español gañou en parís a arbitraxe que mantiña contra a empresa, así, o tribunal desestimaba a reclamación da minera en pro dunha compensación relativa a fase de estudos previos do proxecto",
+    p1:
+      "Despóis de máis de cinco anos de loita veciñal contra o proxecto de Megaminaría da canadense Edgewater a xustiza respalda a decisión da Xunta de paralizar a mina de ouro proxectada en Corcoesto.",
+    p2:
+      "Xa en 2020 o Estado Español gañou en París a arbitraxe que mantiña contra a empresa, así, o tribunal desestimaba a reclamación da minera en pro dunha compensación relativa a fase de estudos previos do proxecto.",
+    p3: "",
     links: [
       "https://galicia.economiadigital.es/directivos-y-empresas/la-ultima-derrota-de-la-minera-de-corcoesto-naufraga-con-el-arbitraje_20056959_102.html",
     ],
