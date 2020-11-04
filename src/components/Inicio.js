@@ -9,6 +9,7 @@ import FilterKeyWord from "./FilterKeyWord";
 import conflicts from "../data/Conflicts";
 import ScrollToTop from "react-scroll-to-top";
 import Typewriter from "typewriter-effect";
+//import arrow from "../images/arrow.png";
 
 const Inicio = (props) => {
   const [numberFilter, setnumberFilter] = useState("");
@@ -20,7 +21,7 @@ const Inicio = (props) => {
 
   const handleFilter = (data) => {
     console.log("manejando los filtros", data);
-    //   setFilterContent(data);
+
     if (data.key === "number") {
       setnumberFilter(data.value);
     } else if (data.key === "place") {
@@ -35,25 +36,6 @@ const Inicio = (props) => {
     setShowPackFilters(!showPackFilters);
     setCloseFilters(!closeFilters);
   };
-
-  const handleClick = (ev) => {
-    console.log("Me han clickado");
-  };
-
-  // const handleMouseEnter = (ev) => {
-  //   ev.setMouseEnter("red");
-  // };
-  // const [item, setItem] = useState(Conflicts);
-
-  // const renderEvent = (props) => {
-  //   console.log(props.match.params.id, Conflicts);
-  //   const foundConflict = Conflicts.find((conflict) => {
-  //     console.log(conflict.id);
-  //     return conflict.id === parseInt(props.match.params.id);
-  //   });
-  //   console.log(foundConflict);
-  //   return <EventDetail conflict={foundConflict} />;
-  // };
 
   const filteredConflicts = Conflicts.filter((conflict) => {
     return conflict.year.includes(numberFilter);
@@ -115,24 +97,15 @@ const Inicio = (props) => {
           <FilterKeyWord handleFilter={handleFilter} />
         </div>
 
-        <Line
-          conflicts={filteredConflicts}
-          // handleMouseEnter={handleMouseEnter}
-          // mouseEnter={mouseEnter}
-        />
-        {/* <Switch>
-          <Route path="/line/:id" render={renderEvent} />
-          {/* <Events conflicts={Conflicts} /> */}
-        {/* </Switch> */}
+        <Line conflicts={filteredConflicts} />
       </section>
       <ScrollToTop
         smooth
-        color="#8f2033"
+        component={<i class="fas fa-arrow-up"></i>}
         style={{
           backgroundColor: "#129471",
           color: "#b13046",
-          border: "none",
-          fontSize: "40px",
+          fontSize: "23px",
         }}
       />
     </>
