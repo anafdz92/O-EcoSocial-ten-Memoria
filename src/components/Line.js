@@ -10,12 +10,12 @@ const Line = (props) => {
       return (
         <li key={item.id}>
           <Link to={`/line/${item.id}`}>
-            <ScrollAnimation animateIn="fadeIn">
+            <ScrollAnimation animateIn="fadeIn" className="textContainer">
               <time>{item.year}</time>
-              <p> {item.name}</p>
-              <p>{item.location}</p>
+              <p className="hidden"> {item.name}</p>
+              <p className="hidden">{item.location}</p>
               <Link to={`/line/${item.id}`}>
-                <button className="buttonPink">
+                <button className="buttonPink ">
                   <i class="fas fa-info-circle"></i>
                 </button>
               </Link>

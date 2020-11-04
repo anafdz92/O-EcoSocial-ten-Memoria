@@ -73,7 +73,7 @@ const Inicio = (props) => {
     <>
       <section className="mainList">
         <div className="animate">
-          <h1 className="title">
+          <h1 className="title hidden">
             <Typewriter
               onInit={(typewriter) => {
                 typewriter.typeString("O Ecosocial ten Memoria").start();

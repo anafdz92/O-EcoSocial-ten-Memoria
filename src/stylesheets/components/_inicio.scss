@@ -5,18 +5,32 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  margin: 15px;
   @include for-tablet {
-    margin: 15px;
-  }
-  @include for-mobile {
     margin: 15px;
   }
 }
 
+.menu ul {
+  @include for-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 10px;
+    padding: 0px;
+  }
+}
 .title {
   margin: 70px;
   font-size: 35px;
   font-weight: bold;
+  @include for-mobile {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .filterContainer {
@@ -28,6 +42,11 @@
   border-style: dashed;
   margin: 45px;
   padding: 15px;
+  @include for-mobile {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .close {
   background-color: transparent;
@@ -58,6 +77,10 @@
 .animate {
   animation: fadeIn ease 4s;
   -webkit-animation: fadeIn ease 4s;
+  @include for-mobile {
+    margin: 0px;
+    padding: 0px;
+  }
 }
 @keyframes fadeIn {
   0% {
@@ -118,6 +141,13 @@
   margin-right: 200px;
   margin-top: 130px;
   transition: all 0.2s ease-in-out;
+  @include for-mobile {
+    font-size: 20px;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: baseline;
+  }
 }
 
 .buttonFilter:hover,
@@ -133,6 +163,9 @@
   font-size: 17px;
   font-weight: bold;
   padding: 10px;
+  @include for-mobile {
+    font-size: 10px;
+  }
 }
 
 .hide {
