@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  margin: 15px;
+
   @include for-tablet {
     margin: 15px;
   }
@@ -13,11 +13,12 @@
 
 .menu ul {
   @include for-mobile {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
     font-size: 10px;
     padding: 0px;
+  }
+  @include for-mini-mobile {
+    display: flex;
+    flex-direction: column;
   }
 }
 .title {
@@ -25,7 +26,7 @@
   font-size: 35px;
   font-weight: bold;
   @include for-mobile {
-    font-size: 15px;
+    font-size: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,6 +43,7 @@
   border-style: dashed;
   margin: 45px;
   padding: 15px;
+
   @include for-mobile {
     flex-direction: column;
     justify-content: center;
@@ -80,6 +82,7 @@
   @include for-mobile {
     margin: 0px;
     padding: 0px;
+    margin-bottom: 35px;
   }
 }
 @keyframes fadeIn {
@@ -144,9 +147,12 @@
   @include for-mobile {
     font-size: 20px;
     top: 0;
-    left: 0;
+
     display: flex;
     justify-content: baseline;
+
+    margin-top: 25px;
+    margin-right: 25px;
   }
 }
 

@@ -7,7 +7,4 @@ body {
   @include for-tablet {
     margin: 15px;
   }
-  @include for-mobile {
-    margin: 15px;
-  }
 }
