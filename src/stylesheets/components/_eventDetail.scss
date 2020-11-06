@@ -29,11 +29,11 @@
   letter-spacing: 0.05em;
   line-height: 1.6;
   padding: 5em 5em 5em 5em;
-  @include for-tablet {
-    margin: 15px;
+  @include proxecto-breakpoint {
+    width: 600px;
   }
   @include for-mobile {
-    margin: 15px;
+    width: 400px;
   }
 }
 
@@ -41,6 +41,14 @@
   list-style-type: none;
   padding: 0px;
   margin-top: 35px;
+  @include proxecto-breakpoint {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  @include for-mobile {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
 }
 
 .modalList li {
@@ -51,6 +59,9 @@
 .quoteTitle {
   font-size: 20px;
   font-weight: bold;
+  @include for-mobile {
+    font-size: 15px;
+  }
 }
 
 .close {
@@ -67,6 +78,14 @@
   margin-right: 15px;
   font-size: 25px;
   transition: all 0.2s ease-in-out;
+  @include for-mobile {
+    margin-top: 0px;
+    margin-right: 0px;
+  }
+  @include for-mini-mobile {
+    margin-top: 0px;
+    margin-right: 0px;
+  }
 }
 
 .close:hover,
@@ -106,6 +125,10 @@
   position: relative;
   float: left;
   overflow: hidden;
+  @include for-mobile {
+    height: 250px;
+    width: 350px;
+  }
 }
 .infoImg {
   display: none;

@@ -21,3 +21,8 @@
     @content;
   }
 }
+@mixin proxecto-breakpoint {
+  @media (max-width: 805px) {
+    @content;
+  }
+}

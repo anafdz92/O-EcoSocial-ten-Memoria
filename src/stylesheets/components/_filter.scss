@@ -23,4 +23,10 @@
 .filter {
   font-size: 18px;
   font-weight: bold;
+  @include for-mobile {
+    font-size: 14px;
+  }
+  @include for-mini-mobile {
+    font-size: 14px;
+  }
 }
