@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/O-EcoSocial-ten-Memoria/precache-manifest.8c7fa037fa427001fc380d5d6a8c2c0f.js"
+  "/O-EcoSocial-ten-Memoria/precache-manifest.ab2ca94d56265777cbff3221094c523d.js"
 );
 
 self.addEventListener('message', (event) => {
