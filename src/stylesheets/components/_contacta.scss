@@ -32,7 +32,6 @@
   padding: 57.5px;
   @include for-mobile {
     width: 400px;
-    padding: 30px;
   }
   @include for-mini-mobile {
     width: 290px;
@@ -66,6 +65,9 @@
   padding: 5px;
   border-radius: 4px;
   border: black;
+  @include for-mobile {
+    width: 110px;
+  }
   @include for-mini-mobile {
     width: 80px;
     height: 20px;
@@ -86,7 +88,8 @@
   border-radius: 4px;
   border: black;
   @include for-mobile {
-    width: 300px;
+    width: 260px;
+    height: 180px;
   }
   @include for-mini-mobile {
     width: 170px;
@@ -104,6 +107,10 @@
   margin-bottom: 45px;
   border: 2px #9b1b30;
   border-style: dashed;
+  // @include for-mobile {
+  //   margin-left: 0px;
+  //   margin-right: 0px;
+  // }
   @include for-mini-mobile {
     font-size: 11px;
     margin-bottom: 45px;
@@ -148,7 +155,7 @@
 .contactForm {
   margin-top: 35px;
   @include for-mobile {
-    margin: 10px;
+    width: 350px;
   }
   @include for-mini-mobile {
     width: 200px;
@@ -182,6 +189,9 @@
 }
 
 .formContent {
+  @include for-mobile {
+    width: 100px;
+  }
   @include for-mini-mobile {
     width: 90px;
     display: flex;
