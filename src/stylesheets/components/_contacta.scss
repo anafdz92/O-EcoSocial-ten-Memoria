@@ -32,6 +32,7 @@
   padding: 57.5px;
   @include for-mobile {
     width: 400px;
+    padding: 0px;
   }
   @include for-mini-mobile {
     width: 290px;
@@ -47,10 +48,12 @@
   margin: 5px;
   @include for-mobile {
     width: 350px;
+    font-size: 12px;
   }
   @include for-mini-mobile {
-    width: 200px;
+    width: 240px;
     font-size: 11px;
+    margin: 3px;
   }
 }
 
@@ -107,15 +110,13 @@
   margin-bottom: 45px;
   border: 2px #9b1b30;
   border-style: dashed;
-  // @include for-mobile {
-  //   margin-left: 0px;
-  //   margin-right: 0px;
-  // }
+
   @include for-mini-mobile {
     font-size: 11px;
-    margin-bottom: 45px;
+    margin-bottom: 25px;
     margin-left: 0px;
     margin-right: 0px;
+    margin-top: 0px;
   }
 }
 
@@ -156,10 +157,12 @@
   margin-top: 35px;
   @include for-mobile {
     width: 350px;
+    margin-top: 5px;
   }
   @include for-mini-mobile {
     width: 200px;
     font-size: 11px;
+    margin-top: 10px;
   }
 }
 .email {
@@ -181,16 +184,20 @@
   font-weight: bold;
   @include for-mobile {
     font-size: 18px;
-    margin: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
   }
   @include for-mini-mobile {
     font-size: 14px;
+    margin: 15px;
   }
 }
 
 .formContent {
   @include for-mobile {
     width: 100px;
+    display: flex;
+    align-items: baseline;
   }
   @include for-mini-mobile {
     width: 90px;
@@ -200,6 +207,10 @@
 }
 
 .imgBtn {
+  @include for-mobile {
+    display: flex;
+    flex-direction: column;
+  }
   @include for-mini-mobile {
     display: flex;
     flex-direction: column;

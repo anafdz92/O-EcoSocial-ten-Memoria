@@ -29,6 +29,7 @@
 
   @include for-mobile {
     width: 400px;
+    margin: 15px;
   }
   @include for-mini-mobile {
     width: 290px;
@@ -53,6 +54,9 @@
 
   @include for-mobile {
     width: 350px;
+    margin: 5px;
+    margin-bottom: 25px;
+    font-size: 11px;
   }
   @include for-mini-mobile {
     width: 200px;
@@ -64,6 +68,12 @@
   flex-wrap: wrap;
   animation: fadeIn ease 10s;
   -webkit-animation: fadeIn ease 10s;
+  @include for-mobile {
+    font-size: 11;
+  }
+  @include for-mini-mobile {
+    font-size: 10px;
+  }
 }
 @keyframes fadeIn {
   0% {
@@ -117,9 +127,13 @@
 
   @include for-mobile {
     width: 350px;
+    font-size: 14px;
   }
   @include for-mini-mobile {
-    width: 200px;
+    width: 250px;
+    font-size: 12px;
+    margin-bottom: 15px;
+    margin-top: 15px;
   }
 }
 
@@ -163,8 +177,20 @@
   margin: 30px;
   font-size: 25px;
   font-weight: bold;
+  @include for-mobile {
+    font-size: 18px;
+    padding-top: 30px;
+  }
+  @include for-mini-mobile {
+    font-size: 14px;
+  }
 }
 .infoDetail {
   display: flex;
   flex-direction: column;
+}
+.email {
+  @include for-mini-mobile {
+    margin: 0px;
+  }
 }
