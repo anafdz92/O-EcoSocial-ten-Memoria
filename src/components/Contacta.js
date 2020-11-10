@@ -128,7 +128,7 @@ const Contacta = (props) => {
                 required
               />
             </div>
-            <div className="formContent">
+            <div className="formContent imgBtn">
               <label for="files">Imaxes:</label>
               <FileUploader onFileSelectSuccess={(file) => uploadFile(file)} />
             </div>
