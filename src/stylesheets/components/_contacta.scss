@@ -113,7 +113,7 @@
 
   @include for-mini-mobile {
     font-size: 11px;
-    margin-bottom: 25px;
+    margin-bottom: 45px;
     margin-left: 0px;
     margin-right: 0px;
     margin-top: 0px;
@@ -135,13 +135,14 @@
   margin-bottom: 35px;
   transition: all 0.2s ease-in-out;
   @include for-mobile {
-    font-size: 25px;
-    margin-right: 8px;
-    margin-bottom: 8px;
+    font-size: 20px;
+    margin-right: 35px;
+    margin-bottom: 4px;
+    margin-top: 10px;
   }
   @include for-mini-mobile {
-    font-size: 20px;
-    margin-right: 6px;
+    font-size: 15px;
+    margin-right: 38px;
     margin-bottom: 6px;
   }
 }
