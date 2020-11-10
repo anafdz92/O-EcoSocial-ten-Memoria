@@ -1,16 +1,46 @@
 //NAVEGADOR
 .menu ul {
   display: flex;
+  @include for-mini-mobile {
+    justify-content: flex-end;
+  }
 }
 .menu ul li {
   list-style-type: none;
   margin: 15px;
+  @include for-mini-mobile {
+    display: none;
+  }
+}
+.menu input {
+  display: none;
+}
+.menu label {
+  position: fixed;
+  z-index: 9999;
+  box-sizing: border-box;
+  display: inline-block;
+  border: 1.5px solid #9b1b30;
+  color: #9b1b30;
+  margin: 15px;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+  user-select: none;
+}
+
+#menu:checked ~ ul li {
+  display: flex;
 }
 .menu ul li a {
   text-decoration: none;
   color: black;
-  padding: 20px;
+  padding: 10px;
 }
+
 .menu ul li a:hover,
 .menu ul li a:focus {
   color: #6f6d6e;

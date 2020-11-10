@@ -50,6 +50,8 @@ const App = (props) => {
     <div>
       <header>
         <nav className="menu">
+        <input type="checkbox" id="menu"/>
+        <label for="menu"> ☰ </label>
           <ul>
             <li>
               <Link to="/">Inicio</Link>
@@ -62,6 +64,7 @@ const App = (props) => {
             </li>
           </ul>
         </nav>
+        
       </header>
       {/* <Switch location={isModal ? previousLocation : location}> */}
       <Switch>
