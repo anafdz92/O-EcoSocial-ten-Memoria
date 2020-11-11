@@ -52,7 +52,7 @@ const App = (props) => {
         <nav className="menu">
         <input type="checkbox" id="menu"/>
         <label for="menu"> ☰ </label>
-          <ul>
+          <ul >
             <li>
               <Link to="/">Inicio</Link>
             </li>
