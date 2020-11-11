@@ -1,25 +1,31 @@
-import React, { useState, useEffect, useReducer } from "react";
-import { Link, Route, Switch } from "react-router-dom";
+import React, { useState } from "react";
 import Line from "./Line";
-import EventDetail from "./EventDetail";
 import Conflicts from "../data/Conflicts";
 import FilterYear from "./FilterYear";
 import FilterContent from "./FilterContent";
 import FilterKeyWord from "./FilterKeyWord";
-import conflicts from "../data/Conflicts";
 import ScrollToTop from "react-scroll-to-top";
 import Typewriter from "typewriter-effect";
 
 const Inicio = (props) => {
-  const [numberFilter, setnumberFilter] = useState("");
-  const [placeFilter, setplaceFilter] = useState("");
-  const [wordFilter, setwordFilter] = useState("");
+
+  const [numberFilter, setnumberFilter] = useState
+  ("");
+
+  const [placeFilter, setplaceFilter] = useState
+  ("");
+
+  const [wordFilter, setwordFilter] = useState
+  ("");
+
   const [showFilters, setShowFilters] = useState(false);
   const [showPackFilters, setShowPackFilters] = useState(false);
   const [closeFilters, setCloseFilters] = useState(false);
 
+ 
+  
+
   const handleFilter = (data) => {
-    console.log("manejando los filtros", data);
 
     if (data.key === "number") {
       setnumberFilter(data.value);

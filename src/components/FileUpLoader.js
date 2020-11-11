@@ -1,4 +1,4 @@
-import React, { useRef, Component } from "react";
+import React from "react";
 
 const FileUploader = (props) => {
   const handleFileInput = (e) => {

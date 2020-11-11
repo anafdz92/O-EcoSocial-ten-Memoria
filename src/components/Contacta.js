@@ -2,7 +2,7 @@ import React, { useState, useEffect, useReducer } from "react";
 import FileUploader from "./FileUpLoader";
 import Typewriter from "typewriter-effect";
 import axios from "axios";
-import ScrollToTop from "react-scroll-to-top";
+
 
 const Contacta = (props) => {
   const [selectedFile, setSelectedFile] = useState(null);
@@ -141,16 +141,7 @@ const Contacta = (props) => {
           </button>
         </form>
       </div>
-      <ScrollToTop
-        smooth
-        component={<i class="fas fa-arrow-up"></i>}
-        style={{
-          backgroundColor: "#129471",
-          color: "#b13046",
-          fontSize: "23px",
-        }}
-
-      />
+     
   
     </div>
   );

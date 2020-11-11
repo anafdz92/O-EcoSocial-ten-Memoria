@@ -39,7 +39,9 @@
     user-select: none;
   }
 }
-
+#menu:checked ~ label {
+  background: #b3b3af;
+}
 #menu:checked ~ ul li {
   display: flex;
 

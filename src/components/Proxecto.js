@@ -1,8 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import javiota from "./../images/javiota.jpg";
 import Typewriter from "typewriter-effect";
-import ScrollToTop from "react-scroll-to-top";
+
 
 const Proxecto = (props) => {
   return (
@@ -51,16 +50,7 @@ const Proxecto = (props) => {
           <p>Unha ollada o pasado para confrontar as loitas do presente.</p>
         </div>
       </div>
-      <ScrollToTop
-        smooth
-        component={<i class="fas fa-arrow-up"></i>}
-        style={{
-          backgroundColor: "#129471",
-          color: "#b13046",
-          fontSize: "23px",
-        }}
-
-      />
+     
     </div>
   );
 };
