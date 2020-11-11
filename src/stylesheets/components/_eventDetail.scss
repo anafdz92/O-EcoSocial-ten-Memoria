@@ -89,12 +89,12 @@
   font-size: 25px;
   transition: all 0.2s ease-in-out;
   @include for-mobile {
-    margin-top: 0px;
-    margin-right: 0px;
+    margin-top: 10px;
+    margin-right: 10px;
   }
   @include for-mini-mobile {
-    margin-top: 0px;
-    margin-right: 0px;
+    margin-top: 10px;
+    margin-right: 10px;
   }
 }
 
