@@ -1,0 +1,34 @@
+.resetButton {
+  display: flex;
+  justify-content: baseline;
+  font-size: 20px;
+  background-color: transparent;
+  color: #8f2033;
+  border: none;
+  float: right;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-right: 0px;
+  margin-bottom: 5px;
+  transition: all 0.2s ease-in-out;
+  @include for-mobile {
+    font-size: 20px;
+    top: 0;
+
+    display: flex;
+    justify-content: baseline;
+
+    margin-top: 25px;
+    margin-right: 25px;
+  }
+}
+
+.resetButton:hover,
+.resetButton:focus {
+  background-color: transparent;
+  color: #b13046;
+  text-decoration: none;
+  cursor: pointer;
+  transform: scale(1.1);
+}

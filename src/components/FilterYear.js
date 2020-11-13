@@ -8,9 +8,7 @@ const FilterYear = (props) => {
     });
   };
 
-  //   const submitHandler = (ev) => {
-  //     ev.preventDefault();
-  //   };
+ 
 
   return (
     <>
@@ -24,6 +22,7 @@ const FilterYear = (props) => {
           name="date"
           placeholder={"Busca aquí"}
           onChange={handleChange}
+          value= {props.value}
         />
       </form>
     </>

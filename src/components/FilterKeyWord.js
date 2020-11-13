@@ -19,6 +19,7 @@ const FilterKeyWord = (props) => {
           name="place"
           placeholder={"Busca aquí"}
           onChange={handleChange}
+          value= {props.value}
         />
       </form>
     </>

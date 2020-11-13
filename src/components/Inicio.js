@@ -1,38 +1,43 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Line from "./Line";
 import Conflicts from "../data/Conflicts";
 import FilterYear from "./FilterYear";
 import FilterContent from "./FilterContent";
 import FilterKeyWord from "./FilterKeyWord";
+import Reset from "./Reset"
 import ScrollToTop from "react-scroll-to-top";
 import Typewriter from "typewriter-effect";
+
 
 const Inicio = (props) => {
 
   const [numberFilter, setnumberFilter] = useState
-  ("");
+  (localStorage.getItem("myValueLocalStorageNumber") ||"");
 
   const [placeFilter, setplaceFilter] = useState
-  ("");
+  (localStorage.getItem("myValueLocalStorage") || "");
 
   const [wordFilter, setwordFilter] = useState
-  ("");
+  (localStorage.getItem("myValueLocalStorageWord") ||"");
 
   const [showFilters, setShowFilters] = useState(false);
   const [showPackFilters, setShowPackFilters] = useState(false);
   const [closeFilters, setCloseFilters] = useState(false);
 
- 
+
   
 
   const handleFilter = (data) => {
 
     if (data.key === "number") {
       setnumberFilter(data.value);
+      localStorage.setItem("myValueLocalStorageNumber",(data.value))
     } else if (data.key === "place") {
       setplaceFilter(data.value);
+      localStorage.setItem("myValueLocalStorage",(data.value))
     } else if (data.key === "word") {
       setwordFilter(data.value);
+      localStorage.setItem("myValueLocalStorageWord",(data.value))
     }
   };
 
@@ -57,6 +62,17 @@ const Inicio = (props) => {
         conflict.p3.toUpperCase().includes(wordFilter.toUpperCase())
       );
     });
+
+  // RESET
+  
+  const resetItemData = () => {
+    setnumberFilter("");
+    localStorage.removeItem("myValueLocalStorageNumber")
+    setplaceFilter("");
+    localStorage.removeItem("myValueLocalStorage")
+    setwordFilter("");
+    localStorage.removeItem("myValueLocalStorageWord")
+  };
 
   //BORRAR BOTÓN
   let buttonFilter = "buttonFilter";
@@ -97,9 +113,10 @@ const Inicio = (props) => {
           <button className={close} onClick={toggleFilter}>
             <i class="fas fa-times"></i>
           </button>
-          <FilterYear handleFilter={handleFilter} />
-          <FilterContent handleFilter={handleFilter} />
-          <FilterKeyWord handleFilter={handleFilter} />
+          <FilterYear handleFilter={handleFilter} value={numberFilter}/>
+          <FilterContent handleFilter={handleFilter} value={placeFilter} />
+          <FilterKeyWord handleFilter={handleFilter} value={wordFilter} />
+          <Reset reset={resetItemData} />
         </div>
 
         <Line conflicts={filteredConflicts} />

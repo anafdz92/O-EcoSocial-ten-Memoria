@@ -9,7 +9,7 @@ const FilterContent = (props) => {
   };
   return (
     <>
-      <form className="form">
+      <form className="form" onSubmit={e => { e.preventDefault(); }}>
         <label htmlfor="place" className="filter">
           FILTRAR POR LUGAR
         </label>
@@ -19,6 +19,7 @@ const FilterContent = (props) => {
           name="place"
           placeholder={"Busca aquí"}
           onChange={handleChange}
+          value= {props.value}
         />
       </form>
     </>
