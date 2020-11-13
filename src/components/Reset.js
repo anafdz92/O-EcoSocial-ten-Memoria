@@ -8,10 +8,12 @@ const Reset = (props) => {
       };
   return (
     <>
-    <button type="button" onClick={handleReset} className="resetButton">
+    <button type="button" onClick={handleReset} className="resetButton ">
        
         <i class="fas fa-trash-restore-alt"></i>
       </button>
+      <div className="bubble">
+        <p>Reset Filtros</p></div>
       
     </>
   );

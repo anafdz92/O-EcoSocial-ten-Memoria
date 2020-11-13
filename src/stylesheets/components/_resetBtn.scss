@@ -21,6 +21,8 @@
 
     margin-top: 25px;
     margin-right: 25px;
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -31,4 +33,31 @@
   text-decoration: none;
   cursor: pointer;
   transform: scale(1.1);
+}
+
+.bubble {
+  background: #129471;
+  position: relative;
+  height: 20px;
+  width: 90px;
+  box-shadow: 1px 12px 33px rgba(0, 0, 0, 0.5);
+  font-size: 11px;
+  padding: 5px;
+  left: -725px;
+  bottom: -19px;
+  display: none;
+}
+.bubble:before {
+  border: 10px solid #129471;
+  content: "";
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  position: absolute;
+  bottom: -20px;
+  left: calc(85% - 25px);
+}
+.resetButton:hover + .bubble {
+  display: flex;
+  flex-direction: column;
 }
