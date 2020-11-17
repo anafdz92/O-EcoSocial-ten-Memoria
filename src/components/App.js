@@ -5,6 +5,8 @@ import Proxecto from "./Proxecto";
 import Contacta from "./Contacta";
 import EventDetail from "./EventDetail";
 import Conflicts from "../data/Conflicts";
+import ScrollToTop from "react-scroll-to-top";
+import ScrollToTopComponent from "./ScrollToTopComponent"
 
 
 const App = (props) => {
@@ -38,6 +40,7 @@ const App = (props) => {
         </nav>
         
       </header>
+      <ScrollToTopComponent />
       <Switch>
         <Route exact path="/" component={Inicio} />
         <Route exact path="/Proxecto" component={Proxecto} />
