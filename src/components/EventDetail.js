@@ -4,7 +4,6 @@ import { withRouter } from "react-router-dom";
 import Typewriter from "typewriter-effect";
 
 const EventDetail = (props) => {
-  console.log(props);
 
   const linksli = props.conflict.links.map((link, index) => {
     return (

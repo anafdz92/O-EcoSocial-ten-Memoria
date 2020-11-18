@@ -6,7 +6,8 @@ import Contacta from "./Contacta";
 import EventDetail from "./EventDetail";
 import Conflicts from "../data/Conflicts";
 import ScrollToTop from "react-scroll-to-top";
-import ScrollToTopComponent from "./ScrollToTopComponent"
+import ScrollToTopComponent from "./ScrollToTopComponent";
+import ScrollMemory from 'react-router-scroll-memory';
 
 
 const App = (props) => {

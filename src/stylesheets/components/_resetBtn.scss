@@ -1,3 +1,12 @@
+.btnContainer {
+  position: absolute;
+  float: right;
+  bottom: 0;
+  left: 0;
+  margin-right: 0px;
+  margin-bottom: 5px;
+}
+
 .resetButton {
   display: flex;
   justify-content: baseline;
@@ -5,12 +14,7 @@
   background-color: transparent;
   color: #8f2033;
   border: none;
-  float: right;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  margin-right: 0px;
-  margin-bottom: 5px;
+
   transition: all 0.2s ease-in-out;
   @include for-mobile {
     font-size: 20px;
@@ -25,29 +29,28 @@
     flex-direction: column;
   }
 }
-
-.resetButton:hover,
-.resetButton:focus {
-  background-color: transparent;
-  color: #b13046;
-  text-decoration: none;
-  cursor: pointer;
-  transform: scale(1.1);
-}
-
-.bubble {
+.btnText {
+  position: absolute;
   background: #129471;
-  position: relative;
+  border-radius: 2px;
   height: 20px;
   width: 90px;
   box-shadow: 1px 12px 33px rgba(0, 0, 0, 0.5);
   font-size: 11px;
   padding: 5px;
-  left: -725px;
-  bottom: -19px;
+  left: -55px;
+  bottom: 30px;
   display: none;
 }
-.bubble:before {
+
+.resetButton:hover {
+  background-color: transparent;
+  color: #b13046;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btnText:before {
   border: 10px solid #129471;
   content: "";
   border-left-color: transparent;
@@ -57,7 +60,9 @@
   bottom: -20px;
   left: calc(85% - 25px);
 }
-.resetButton:hover + .bubble {
+
+.resetButton:hover + .btnText {
   display: flex;
+
   flex-direction: column;
 }
