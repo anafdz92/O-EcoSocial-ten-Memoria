@@ -5,6 +5,7 @@ import alcoa from "./../images/alcoa.jpg";
 import eume from "./../images/eume.jpg";
 import irixo from "./../images/irixo.jpg";
 import corcoesto from "./../images/corcoesto.jpeg";
+import tractorada from "./../images/tractorada.jpg";
 const conflicts = [
   {
     id: 1,
@@ -114,7 +115,7 @@ const conflicts = [
   {
     id: 7,
     year: "2020",
-    name: "A minera de Corcoesto perde a batalla Xudicial",
+    name: "A mineira de Corcoesto perde a batalla Xudicial",
     location: "Cabana de Bergantiños, A Coruña",
     p1:
       "Despóis de máis de cinco anos de loita veciñal contra o proxecto de Megaminaría da canadense Edgewater a xustiza respalda a decisión da Xunta de paralizar a mina de ouro proxectada en Corcoesto.",
@@ -128,6 +129,24 @@ const conflicts = [
     date: "15/03/2019",
     imgFont:
       "https://www.galiciapress.es/texto-diario/mostrar/1357004/supremo-avala-negativa-xunta-proyecto-corcoesto-minera-agota-via-judicial",
+  },
+  {
+    id: 8,
+    year: "2015",
+    name: "Tractorada da muralla",
+    location: "Lugo",
+    p1:
+      " O 3 de setembro de 2015, mais de 1.000 tractores invaden a ciudade de Lugo nunha nova protesta polos baixos prezos do leite.",
+    p2:
+      "En decembro de 2016, tras a ruptura do `Acordo lácteo` firmado coa Industria en Madrid, o sector funda o colectivo Agromuralla e volta as rúas, desta vez para bloquear a cidade lucense durante máis dun mes. `Foi un movemento moi soado na zoa, cos seus retractores coma sempre, xa que cortar a ronda da muralla durante tantas semanas é como quitarlle a cidade a sua arteria principal, e todo o comercio en Lugo depende desta vía. Ainda así moita xente entendeu o porqué da loita do sector leiteiro e mostrou o seu apoio`. ",
+    p3: "`Foi un movemento moi soado na zoa, cos seus retractores coma sempre, xa que cortar a ronda da muralla durante tantas semanas é como quitarlle a cidade a sua arteria principal, e todo o comercio en Lugo depende desta vía. Ainda así moita xente entendeu o porqué da loita do sector leiteiro e mostrou o seu apoio. Imaxina todas as festas do nadal decoradas con tractores!` (Laura, colaboradora)" ,
+    links: [
+      "https://www.elprogreso.es/articulo/lugo/unos-mil-tractores-colapsan-hoy-la-ronda-da-muralla-durante-cinco-horas/20150903000000356525.html","https://esradio.libertaddigital.com/galicia/2015-09-04/unos-quinientos-tractores-siguen-cercando-la-muralla-de-lugo-1276556310/amp.html","https://www.campogalego.es/los-ganaderos-retiraran-este-viernes-todos-los-tractores-de-la-muralla-de-lugo/"
+    ],
+    url: tractorada,
+    date: "3/09/2015",
+    imgFont:
+      "",
   },
 ];
 
